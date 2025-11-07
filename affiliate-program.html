@@ -1,0 +1,2166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliate Marketing Program - AIBOT IYI Protocol</title>
+    <meta name="description" content="Join AIBOT IYI Protocol's affiliate program with 8% direct commissions, 6-level advancement system, and unlimited earning potential up to $100K+.">
+    <meta name="keywords" content="affiliate program, referral marketing, commission structure, affiliate earnings, network marketing, AIBOT IYI affiliate, crypto affiliate program, DeFi referrals">
+    <meta name="author" content="AIBOT IYI Protocol">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://docs.aibotiyi.com/affiliate-program.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://docs.aibotiyi.com/affiliate-program.html">
+    <meta property="og:title" content="Affiliate Marketing Program - AIBOT IYI Protocol">
+    <meta property="og:description" content="Earn up to $100K+ with AIBOT IYI's affiliate program. 8% direct + 5% second level commissions. 6-level advancement system with cash rewards up to $30K.">
+    <meta property="og:image" content="https://aibotiyi.com/images/affiliate-program-preview.jpg">
+    <meta property="og:site_name" content="AIBOT IYI Protocol Documentation">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://docs.aibotiyi.com/affiliate-program.html">
+    <meta property="twitter:title" content="Affiliate Marketing Program - AIBOT IYI Protocol">
+    <meta property="twitter:description" content="Unlimited earning potential: 8%+5% commissions, 6-level system, cash rewards up to $30K. Professional affiliate program for crypto enthusiasts.">
+    <meta property="twitter:image" content="https://aibotiyi.com/images/affiliate-program-preview.jpg">
+    <meta property="twitter:site" content="@aibotiyi">
+    <meta property="twitter:creator" content="@aibotiyi">
+    
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#FBBF24">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AffiliateProgram",
+        "name": "AIBOT IYI Protocol Affiliate Program",
+        "description": "Multi-level affiliate marketing program with commission structure and advancement system",
+        "provider": {
+            "@type": "Organization",
+            "name": "AIBOT IYI Protocol",
+            "url": "https://aibotiyi.com",
+            "sameAs": [
+                "https://twitter.com/aibotiyi",
+                "https://t.me/aibotiyi",
+                "https://youtube.com/@aibotiyi",
+                "https://github.com/aibotiyi"
+            ]
+        },
+        "commissionStructure": "8% direct referrals + 5% second level",
+        "category": "Cryptocurrency Affiliate Program"
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Chart.js for visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon180.png">
+    
+    <style>
+        .affiliate-gradient {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(17, 24, 39, 0.95) 50%, rgba(31, 41, 55, 0.9) 100%);
+            position: relative;
+        }
+        
+        .affiliate-gradient::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(245, 158, 11, 0.05) 50%, rgba(217, 119, 6, 0.1) 100%);
+            z-index: 1;
+        }
+        
+        .affiliate-gradient > * {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .commission-card {
+            background: linear-gradient(145deg, rgba(251, 191, 36, 0.1) 0%, rgba(245, 158, 11, 0.05) 100%);
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .commission-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(251, 191, 36, 0.4);
+            box-shadow: 0 10px 25px rgba(251, 191, 36, 0.1);
+        }
+        
+        .level-badge {
+            background: linear-gradient(135deg, #FBBF24, #F59E0B);
+            color: #000;
+            font-weight: 700;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .progress-bar {
+            background: linear-gradient(90deg, #FBBF24, #F59E0B);
+            height: 8px;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+        
+        .calculator-input {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            color: white;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            width: 100%;
+        }
+        
+        .calculator-input:focus {
+            outline: none;
+            border-color: #FBBF24;
+            box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.2);
+        }
+        
+        .tab-button {
+            padding: 1rem 2rem;
+            border: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: #9CA3AF;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 0.5rem 0.5rem 0 0;
+        }
+        
+        .tab-button.active {
+            background: linear-gradient(135deg, #FBBF24, #F59E0B);
+            color: #000;
+            font-weight: 600;
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0 0.5rem 0.5rem 0.5rem;
+            border: 1px solid rgba(251, 191, 36, 0.2);
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .earning-highlight {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(16, 185, 129, 0.1));
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            text-align: center;
+        }
+        
+        .advantage-item {
+            background: rgba(251, 191, 36, 0.05);
+            border-left: 4px solid #FBBF24;
+            padding: 1rem;
+            border-radius: 0 0.5rem 0.5rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .advantage-item:hover {
+            background: rgba(251, 191, 36, 0.1);
+            transform: translateX(4px);
+        }
+        
+        /* Level Timeline Styles */
+        .level-timeline-item {
+            position: relative;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            transition: all 0.3s ease;
+        }
+        
+        .level-timeline-item:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+        
+        .level-badge-timeline {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.875rem;
+            gap: 0.125rem;
+            flex-shrink: 0;
+            position: relative;
+        }
+        
+        .level-badge-timeline.completed {
+            background: linear-gradient(135deg, #10B981, #059669);
+            color: white;
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+        }
+        
+        .level-badge-timeline.current {
+            background: linear-gradient(135deg, #3B82F6, #2563EB);
+            color: white;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        .level-badge-timeline.locked {
+            background: linear-gradient(135deg, #374151, #1F2937);
+            color: #9CA3AF;
+            border: 2px solid #4B5563;
+        }
+        
+        .level-badge-timeline.legendary {
+            background: linear-gradient(135deg, #FBBF24, #F59E0B);
+            color: #000;
+            border: 2px solid #D97706;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .level-status {
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem;
+        }
+        
+        .level-status.completed {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10B981;
+        }
+        
+        .level-status.current {
+            background: rgba(59, 130, 246, 0.2);
+            color: #3B82F6;
+        }
+        
+        .level-status.locked {
+            background: rgba(107, 114, 128, 0.2);
+            color: #9CA3AF;
+        }
+        
+        .requirement-item {
+            text-align: center;
+            padding: 0.5rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0.375rem;
+        }
+        
+        .progress-container {
+            margin-top: 0.75rem;
+        }
+        
+        .level-progress-bar {
+            transition: width 0.5s ease;
+        }
+        
+        .reward-preview {
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            background: rgba(147, 51, 234, 0.1);
+            border-radius: 0.375rem;
+            border: 1px solid rgba(147, 51, 234, 0.2);
+        }
+        
+        .legendary-reward {
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+        }
+        
+        /* Mobile Responsive Optimizations */
+        @media (max-width: 768px) {
+            /* Reduce excessive padding on mobile */
+            .main-content {
+                padding-left: 0 !important;
+            }
+            
+            /* Hero section mobile optimization */
+            .affiliate-gradient {
+                padding: 2rem 1rem !important;
+            }
+            
+            /* Main container mobile padding */
+            .container.mx-auto.max-w-6xl {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+            
+            /* Section spacing optimization */
+            .mb-16 {
+                margin-bottom: 2rem !important;
+            }
+            
+            /* Card padding reduction */
+            .commission-card {
+                padding: 1.5rem !important;
+            }
+            
+            .bg-gradient-to-r.from-blue-900\/20.to-purple-900\/20 {
+                padding: 1.5rem !important;
+            }
+            
+            /* Tab button mobile optimization */
+            .tab-button {
+                padding: 0.75rem 1rem !important;
+                font-size: 0.875rem;
+            }
+            
+            /* Level timeline mobile spacing */
+            .level-timeline-item {
+                padding: 0.75rem !important;
+            }
+            
+            /* Calculator boxes mobile optimization */
+            .bg-gray-900\/50 {
+                padding: 1rem !important;
+            }
+            
+            /* Mobile table optimization */
+            .level-table-mobile {
+                display: block;
+            }
+            
+            .level-table-desktop {
+                display: none;
+            }
+            
+            /* Mobile level cards */
+            .mobile-level-card {
+                background: rgba(0, 0, 0, 0.3);
+                border: 1px solid rgba(251, 191, 36, 0.2);
+                border-radius: 0.75rem;
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+            .mobile-level-header {
+                display: flex;
+                justify-content: between;
+                align-items: center;
+                margin-bottom: 0.75rem;
+                padding-bottom: 0.75rem;
+                border-bottom: 1px solid rgba(251, 191, 36, 0.2);
+            }
+            
+            .mobile-level-content {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0.75rem;
+                font-size: 0.875rem;
+            }
+            
+            .mobile-requirement {
+                display: flex;
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+            
+            .mobile-req-label {
+                color: #9CA3AF;
+                font-size: 0.75rem;
+                font-weight: 500;
+            }
+            
+            .mobile-req-value {
+                color: #FBBF24;
+                font-weight: 600;
+            }
+            
+            /* Timeline mobile optimization */
+            .requirement-item {
+                padding: 0.375rem !important;
+                font-size: 0.75rem;
+            }
+            
+            .level-badge-timeline {
+                width: 2.5rem !important;
+                height: 2.5rem !important;
+                font-size: 0.75rem !important;
+            }
+            
+            /* Reduce hero stats padding */
+            .bg-white\/10.backdrop-blur-sm {
+                padding: 1rem !important;
+            }
+            
+            /* Mobile grid optimizations */
+            .grid.grid-cols-1.md\:grid-cols-3 {
+                gap: 1rem !important;
+            }
+            
+            .grid.grid-cols-1.md\:grid-cols-2 {
+                gap: 1rem !important;
+            }
+            
+            .grid.grid-cols-1.lg\:grid-cols-2 {
+                gap: 1rem !important;
+            }
+        }
+        
+        /* Desktop styles (unchanged) */
+        @media (min-width: 769px) {
+            .level-table-mobile {
+                display: none;
+            }
+            
+            .level-table-desktop {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    
+    <!-- Sidebar -->
+    <div id="sidebar"></div>
+    
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <!-- Header for mobile -->
+        <div id="header" class="lg:hidden"></div>
+        
+        <!-- Hero Section -->
+        <section class="affiliate-gradient py-8 md:py-16 px-4 md:px-6">
+            <div class="container mx-auto max-w-6xl">
+                <div data-aos="fade-up" class="text-center">
+                    <div class="inline-flex items-center px-4 py-2 bg-yellow-400/20 rounded-full text-yellow-400 text-sm font-semibold mb-6">
+                        <i class="fas fa-users mr-2"></i>
+                        AFFILIATE MARKETING PROGRAM
+                    </div>
+                    <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
+                        Unlimited Earning Potential
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-300 mb-6 md:mb-8 max-w-3xl mx-auto">
+                        Join AIBOT IYI's professional affiliate program with industry-leading commissions, 
+                        6-level advancement system, and cash rewards up to $30,000
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                        <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-yellow-500/20">
+                            <div class="text-3xl font-bold text-yellow-400 mb-2">8% + 5%</div>
+                            <div class="text-gray-300">Commission Structure</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-yellow-500/20">
+                            <div class="text-3xl font-bold text-yellow-400 mb-2">$100K+</div>
+                            <div class="text-gray-300">Level 6 Earning Potential</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-yellow-500/20">
+                            <div class="text-3xl font-bold text-yellow-400 mb-2">$30K</div>
+                            <div class="text-gray-300">Maximum Cash Reward</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="container mx-auto max-w-6xl px-4 md:px-6 py-6 md:py-12">
+            
+            <!-- Tab Navigation -->
+            <div class="mb-6 md:mb-8" data-aos="fade-up">
+                <div class="flex flex-wrap gap-1 md:gap-2">
+                    <button class="tab-button active" onclick="showTab('overview')">
+                        <i class="fas fa-home mr-1 md:mr-2"></i>
+                        <span class="hidden sm:inline">Program </span>Overview
+                    </button>
+                    <button class="tab-button" onclick="showTab('calculator')">
+                        <i class="fas fa-calculator mr-1 md:mr-2"></i>
+                        <span class="hidden sm:inline">Earnings </span>Calculator
+                    </button>
+                    <button class="tab-button" onclick="showTab('levels')">
+                        <i class="fas fa-chart-line mr-1 md:mr-2"></i>
+                        <span class="hidden sm:inline">Level </span>System
+                    </button>
+                    <button class="tab-button" onclick="showTab('strategies')">
+                        <i class="fas fa-lightbulb mr-1 md:mr-2"></i>
+                        <span class="hidden sm:inline">Success </span>Strategies
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Content: Program Overview -->
+            <div id="overview" class="tab-content active">
+                <!-- Commission Structure -->
+                <section class="mb-8 md:mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold text-center mb-12">
+                        <i class="fas fa-percentage text-yellow-400 mr-3"></i>
+                        Commission Structure
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                        <!-- F1 Direct Referrals -->
+                        <div class="commission-card p-8 rounded-xl text-center">
+                            <div class="w-20 h-20 mx-auto mb-6 bg-yellow-400 rounded-full flex items-center justify-center">
+                                <span class="text-3xl font-bold text-black">8%</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-yellow-400 mb-4">F1 Direct Referrals</h3>
+                            <p class="text-gray-300 mb-4">
+                                Earn 8% commission on all direct referrals' investments and trading activities.
+                            </p>
+                            <div class="text-center mt-4">
+                                <div class="inline-flex items-center px-4 py-2 bg-yellow-400/20 rounded-full">
+                                    <i class="fas fa-star text-yellow-400 mr-2"></i>
+                                    <span class="text-yellow-400 font-semibold">Direct Referral Rewards</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- F2 Second Level -->
+                        <div class="commission-card p-8 rounded-xl text-center">
+                            <div class="w-20 h-20 mx-auto mb-6 bg-yellow-400 rounded-full flex items-center justify-center">
+                                <span class="text-3xl font-bold text-black">5%</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-yellow-400 mb-4">F2 Second Level</h3>
+                            <p class="text-gray-300 mb-4">
+                                Earn 5% commission on your referrals' referrals for sustainable passive income.
+                            </p>
+                            <div class="text-center mt-4">
+                                <div class="inline-flex items-center px-4 py-2 bg-yellow-400/20 rounded-full">
+                                    <i class="fas fa-users text-yellow-400 mr-2"></i>
+                                    <span class="text-yellow-400 font-semibold">Second Level Rewards</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Advanced Compensation System -->
+                <section class="mb-8 md:mb-16" data-aos="fade-up">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="bg-gradient-to-r from-blue-900/20 to-purple-900/20 p-8 rounded-xl border border-blue-500/30">
+                            <div class="text-center mb-8">
+                                <h2 class="text-3xl font-bold mb-4">
+                                    <i class="fas fa-layer-group text-blue-400 mr-3"></i>
+                                    Advanced Compensation System
+                                </h2>
+                                <p class="text-lg text-gray-300">
+                                    Binary compression plan with same-rank appreciation for two adjacent generations
+                                </p>
+                            </div>
+                            
+                            <!-- System Overview -->
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                                <!-- Team Bonus Compression -->
+                                <div class="bg-white/5 p-6 rounded-lg border border-orange-500/20">
+                                    <h3 class="text-xl font-bold text-orange-400 mb-4">
+                                        <i class="fas fa-compress-alt mr-2"></i>
+                                        Team Bonus Compression
+                                    </h3>
+                                    <p class="text-gray-300 mb-4">
+                                        Team bonuses are <strong class="text-yellow-400">compressed</strong> when there are equal or higher levels in your downline.
+                                    </p>
+                                    
+                                    <div class="space-y-3 text-sm">
+                                        <div class="p-3 bg-orange-500/10 rounded border border-orange-500/20">
+                                            <strong class="text-orange-400">Rule:</strong> Your effective bonus = Your level% - Highest downline level%
+                                        </div>
+                                        <div class="space-y-2">
+                                            <div>• <strong>Level 1 (1%)</strong> in downline → You get compressed by 1%</div>
+                                            <div>• <strong>Level 2 (2%)</strong> in downline → You get compressed by 2%</div>
+                                            <div>• <strong>Level 3 (3%)</strong> in downline → You get compressed by 3%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Same-Rank Appreciation -->
+                                <div class="bg-white/5 p-6 rounded-lg border border-green-500/20">
+                                    <h3 class="text-xl font-bold text-green-400 mb-4">
+                                        <i class="fas fa-handshake mr-2"></i>
+                                        Same-Rank Appreciation
+                                    </h3>
+                                    <p class="text-gray-300 mb-4">
+                                        When you have <strong class="text-yellow-400">same-level partners</strong> in your upline, they earn from your team bonus.
+                                    </p>
+                                    
+                                    <div class="space-y-3 text-sm">
+                                        <div class="p-3 bg-green-500/10 rounded border border-green-500/20">
+                                            <strong class="text-green-400">Only 2 adjacent generations:</strong> F1 and F2 upline from you
+                                        </div>
+                                        <div class="space-y-2">
+                                            <div>• <strong>F1 Same Level:</strong> Gets 8% of your team bonus</div>
+                                            <div>• <strong>F2 Same Level:</strong> Gets 5% of your team bonus</div>
+                                            <div>• <strong>Lower Level:</strong> Gets 0% (skipped to next)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Detailed Examples -->
+                            <div class="space-y-8">
+                                <!-- Example 1: Team Bonus Compression -->
+                                <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-700">
+                                    <h4 class="text-xl font-bold text-yellow-400 mb-4">
+                                        <i class="fas fa-chart-line mr-2"></i>
+                                        Example 1: Team Bonus Compression
+                                    </h4>
+                                    
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <!-- Chain Structure -->
+                                        <div>
+                                            <h5 class="font-bold text-gray-300 mb-3">Referral Chain:</h5>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="flex items-center space-x-2 p-2 bg-blue-500/10 rounded">
+                                                    <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xs">F3</div>
+                                                    <span>Level 3 (3% team bonus)</span>
+                                                </div>
+                                                <div class="flex items-center justify-center">
+                                                    <i class="fas fa-arrow-down text-gray-400"></i>
+                                                </div>
+                                                <div class="flex items-center space-x-2 p-2 bg-green-500/10 rounded">
+                                                    <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-xs">F2</div>
+                                                    <span>Level 2 (2% team bonus)</span>
+                                                </div>
+                                                <div class="flex items-center justify-center">
+                                                    <i class="fas fa-arrow-down text-gray-400"></i>
+                                                </div>
+                                                <div class="flex items-center space-x-2 p-2 bg-yellow-500/10 rounded">
+                                                    <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center text-black font-bold text-xs">F1</div>
+                                                    <span>Level 1 (1% team bonus)</span>
+                                                </div>
+                                                <div class="flex items-center justify-center">
+                                                    <i class="fas fa-arrow-down text-gray-400"></i>
+                                                </div>
+                                                <div class="flex items-center space-x-2 p-2 bg-purple-500/10 rounded">
+                                                    <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xs">F0</div>
+                                                    <span>Investor: $100</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Bonus Distribution -->
+                                        <div>
+                                            <h5 class="font-bold text-gray-300 mb-3">Actual Earnings:</h5>
+                                            <div class="space-y-3">
+                                                <div class="p-3 bg-yellow-500/10 rounded border border-yellow-500/20">
+                                                    <div class="font-bold text-yellow-400">F1 (Level 1)</div>
+                                                    <div class="text-sm text-gray-300">Gets: 1% × $100 = <strong class="text-green-400">$1</strong></div>
+                                                </div>
+                                                
+                                                <div class="p-3 bg-green-500/10 rounded border border-green-500/20">
+                                                    <div class="font-bold text-green-400">F2 (Level 2)</div>
+                                                    <div class="text-sm text-gray-300">Should get: 2% × $100 = $2</div>
+                                                    <div class="text-sm text-gray-300">Compressed by F1: 2% - 1% = 1%</div>
+                                                    <div class="text-sm text-gray-300">Gets: <strong class="text-green-400">$1</strong></div>
+                                                </div>
+                                                
+                                                <div class="p-3 bg-blue-500/10 rounded border border-blue-500/20">
+                                                    <div class="font-bold text-blue-400">F3 (Level 3)</div>
+                                                    <div class="text-sm text-gray-300">Should get: 3% × $100 = $3</div>
+                                                    <div class="text-sm text-gray-300">Compressed by F2: 3% - 2% = 1%</div>
+                                                    <div class="text-sm text-gray-300">Gets: <strong class="text-green-400">$1</strong></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Example 2: Same-Rank Appreciation -->
+                                <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-700">
+                                    <h4 class="text-xl font-bold text-yellow-400 mb-4">
+                                        <i class="fas fa-users mr-2"></i>
+                                        Example 2: Same-Rank Appreciation
+                                    </h4>
+                                    
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <!-- Scenario -->
+                                        <div>
+                                            <h5 class="font-bold text-gray-300 mb-3">Scenario:</h5>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="p-2 bg-purple-500/10 rounded">
+                                                    <strong>F5 (Level 3)</strong> → F4 (Level 3) → F3 (Level 3)
+                                                </div>
+                                                <div class="text-gray-400 text-xs">
+                                                    F3 earns $1 from team bonus (after compression)
+                                                </div>
+                                                <div class="text-gray-400 text-xs">
+                                                    F4 and F5 are same level (Level 3) as F3
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Same-Rank Commission -->
+                                        <div>
+                                            <h5 class="font-bold text-gray-300 mb-3">Same-Rank Earnings:</h5>
+                                            <div class="space-y-3">
+                                                <div class="p-3 bg-green-500/10 rounded border border-green-500/20">
+                                                    <div class="font-bold text-green-400">F4 (F1 position)</div>
+                                                    <div class="text-sm text-gray-300">
+                                                        8% × $1 = <strong class="text-green-400">$0.08</strong>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="p-3 bg-blue-500/10 rounded border border-blue-500/20">
+                                                    <div class="font-bold text-blue-400">F5 (F2 position)</div>
+                                                    <div class="text-sm text-gray-300">
+                                                        5% × $1 = <strong class="text-blue-400">$0.05</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Example 3: Partial Compression -->
+                                <div class="bg-gray-900/50 p-6 rounded-lg border border-gray-700">
+                                    <h4 class="text-xl font-bold text-yellow-400 mb-4">
+                                        <i class="fas fa-balance-scale mr-2"></i>
+                                        Example 3: Partial Same-Rank (Level Mismatch)
+                                    </h4>
+                                    
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <!-- Scenario -->
+                                        <div>
+                                            <h5 class="font-bold text-gray-300 mb-3">Scenario:</h5>
+                                            <div class="space-y-2 text-sm">
+                                                <div class="p-2 bg-purple-500/10 rounded">
+                                                    <strong>F5 (Level 3)</strong> → F4 (Level 2) → F3 (Level 3)
+                                                </div>
+                                                <div class="text-gray-400 text-xs">
+                                                    F3 earns $1 from team bonus
+                                                </div>
+                                                <div class="text-gray-400 text-xs">
+                                                    F4 is lower level, F5 becomes "F2 position"
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Adjusted Commission -->
+                                        <div>
+                                            <h5 class="font-bold text-gray-300 mb-3">Adjusted Earnings:</h5>
+                                            <div class="space-y-3">
+                                                <div class="p-3 bg-red-500/10 rounded border border-red-500/20">
+                                                    <div class="font-bold text-red-400">F4 (Level 2 < Level 3)</div>
+                                                    <div class="text-sm text-gray-300">
+                                                        Level too low → <strong class="text-red-400">$0</strong>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="p-3 bg-blue-500/10 rounded border border-blue-500/20">
+                                                    <div class="font-bold text-blue-400">F5 (Becomes F2 position)</div>
+                                                    <div class="text-sm text-gray-300">
+                                                        5% × $1 = <strong class="text-blue-400">$0.05</strong>
+                                                    </div>
+                                                    <div class="text-xs text-gray-400">(F1 position skipped due to F4's low level)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Key Benefits -->
+                            <div class="mt-8 p-6 bg-gradient-to-r from-yellow-500/10 to-green-500/10 rounded-lg border border-yellow-500/20">
+                                <h4 class="text-xl font-bold text-yellow-400 mb-4">
+                                    <i class="fas fa-star mr-2"></i>
+                                    System Benefits
+                                </h4>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                                    <div class="text-center">
+                                        <i class="fas fa-rocket text-yellow-400 text-2xl mb-2 block"></i>
+                                        <strong class="text-yellow-400">Incentivizes Growth</strong>
+                                        <p class="text-gray-300 mt-2">Encourages building strong teams and achieving higher levels</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <i class="fas fa-balance-scale text-green-400 text-2xl mb-2 block"></i>
+                                        <strong class="text-green-400">Fair Distribution</strong>
+                                        <p class="text-gray-300 mt-2">Prevents over-concentration and ensures balanced rewards</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <i class="fas fa-infinity text-blue-400 text-2xl mb-2 block"></i>
+                                        <strong class="text-blue-400">Sustainable Model</strong>
+                                        <p class="text-gray-300 mt-2">Creates long-term value through compressed but fair compensation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Competitive Advantages -->
+                <section class="mb-8 md:mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold text-center mb-12">
+                        <i class="fas fa-star text-yellow-400 mr-3"></i>
+                        Competitive Advantages
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="advantage-item">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-chart-bar text-yellow-400 text-xl mr-3"></i>
+                                <h3 class="font-bold">High Commission Rates</h3>
+                            </div>
+                            <p class="text-gray-300 text-sm">8% direct + 5% second level commissions, industry-leading rates</p>
+                        </div>
+                        
+                        <div class="advantage-item">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-stream text-yellow-400 text-xl mr-3"></i>
+                                <h3 class="font-bold">Multiple Income Streams</h3>
+                            </div>
+                            <p class="text-gray-300 text-sm">Commissions, team bonuses, cash rewards, and achievement bonuses</p>
+                        </div>
+                        
+                        <div class="advantage-item">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-sync text-yellow-400 text-xl mr-3"></i>
+                                <h3 class="font-bold">Recurring Monthly Bonuses</h3>
+                            </div>
+                            <p class="text-gray-300 text-sm">Consistent passive income potential with team performance bonuses</p>
+                        </div>
+                        
+                        <div class="advantage-item">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-trophy text-yellow-400 text-xl mr-3"></i>
+                                <h3 class="font-bold">Achievement Rewards</h3>
+                            </div>
+                            <p class="text-gray-300 text-sm">Up to $30,000 in one-time cash bonuses for level advancement</p>
+                        </div>
+                        
+                        <div class="advantage-item">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-infinity text-yellow-400 text-xl mr-3"></i>
+                                <h3 class="font-bold">No Cap on Earnings</h3>
+                            </div>
+                            <p class="text-gray-300 text-sm">Unlimited growth opportunity with scalable commission structure</p>
+                        </div>
+                        
+                        <div class="advantage-item">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-graduation-cap text-yellow-400 text-xl mr-3"></i>
+                                <h3 class="font-bold">Training & Support</h3>
+                            </div>
+                            <p class="text-gray-300 text-sm">Comprehensive training materials and dedicated support team</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Earning Example -->
+                <section class="mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold text-center mb-12">
+                        <i class="fas fa-money-bill-wave text-yellow-400 mr-3"></i>
+                        Level 6 Earning Potential
+                    </h2>
+                    
+                    <div class="earning-highlight max-w-4xl mx-auto">
+                        <h3 class="text-2xl font-bold text-green-400 mb-6">$100K+ Monthly Earning Example</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-yellow-400">$10,000</div>
+                                <div class="text-sm text-gray-300">Personal Investment</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-yellow-400">$1.5M</div>
+                                <div class="text-sm text-gray-300">Team Sales Volume</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-yellow-400">$90K</div>
+                                <div class="text-sm text-gray-300">Monthly Team Bonus (6%)</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-yellow-400">$30K</div>
+                                <div class="text-sm text-gray-300">One-time Cash Reward</div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <p class="text-lg text-green-300 mb-4">
+                                <i class="fas fa-plus mr-2"></i>
+                                F1/F2 Commissions: Additional ongoing income stream
+                            </p>
+                            <p class="text-sm text-gray-400">
+                                * This is an example based on Level 6 achievement. Individual results may vary.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Tab Content: Calculator -->
+            <div id="calculator" class="tab-content">
+                <section data-aos="fade-up">
+                    <h2 class="text-3xl font-bold text-center mb-12">
+                        <i class="fas fa-calculator text-yellow-400 mr-3"></i>
+                        Level-Based Earnings Calculator
+                    </h2>
+                    
+                    <div class="max-w-6xl mx-auto">
+                        <!-- Calculator Instructions -->
+                        <div class="bg-blue-500/10 p-6 rounded-xl border border-blue-500/20 mb-8">
+                            <h3 class="text-lg font-bold text-blue-400 mb-3">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                How Earnings Work
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <strong class="text-yellow-400">Direct Commissions (Fixed):</strong>
+                                    <ul class="text-gray-300 mt-2 space-y-1">
+                                        <li>• F1 investments: 8% commission</li>
+                                        <li>• F2 investments: 5% commission</li>
+                                        <li>• Independent of your level</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <strong class="text-yellow-400">Team Bonus (Level-based):</strong>
+                                    <ul class="text-gray-300 mt-2 space-y-1">
+                                        <li>• Based on YOUR achievement level</li>
+                                        <li>• Compressed by downline levels</li>
+                                        <li>• Applied to total team volume</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                            <!-- Calculator Inputs -->
+                            <div class="bg-gray-900/50 p-6 rounded-xl border border-yellow-500/20 h-fit">
+                                <h3 class="text-xl font-bold mb-4">Calculate Your Earnings</h3>
+                                
+                                <div class="space-y-4">
+                                    <!-- Personal Level -->
+                                    <div>
+                                        <label class="block text-sm font-semibold mb-2">Your Current Level</label>
+                                        <select id="currentLevel" class="calculator-input">
+                                            <option value="1">Level 1 (1% team bonus)</option>
+                                            <option value="2">Level 2 (2% team bonus)</option>
+                                            <option value="3" selected>Level 3 (3% team bonus)</option>
+                                            <option value="4">Level 4 (4% team bonus)</option>
+                                            <option value="5">Level 5 (5% team bonus)</option>
+                                            <option value="6">Level 6 (6% team bonus)</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- Team Structure -->
+                                    <div>
+                                        <label class="block text-sm font-semibold mb-2">Total Team Sales Volume ($)</label>
+                                        <input type="number" id="teamVolume" class="calculator-input" placeholder="Total team investment volume" value="100000">
+                                        <div class="text-xs text-gray-400 mt-1">Sum of all F1, F2, F3... investments in your network</div>
+                                    </div>
+                                    
+                                    <!-- F1 Direct Commission -->
+                                    <div>
+                                        <label class="block text-sm font-semibold mb-2">F1 Total Investments ($)</label>
+                                        <input type="number" id="f1Volume" class="calculator-input" placeholder="Direct F1 investment volume" value="20000">
+                                        <div class="text-xs text-gray-400 mt-1">Total investments from your direct referrals</div>
+                                    </div>
+                                    
+                                    <!-- F2 Direct Commission -->
+                                    <div>
+                                        <label class="block text-sm font-semibold mb-2">F2 Total Investments ($)</label>
+                                        <input type="number" id="f2Volume" class="calculator-input" placeholder="F2 investment volume" value="30000">
+                                        <div class="text-xs text-gray-400 mt-1">Total investments from second-level referrals</div>
+                                    </div>
+                                    
+                                    <!-- Compression Factor -->
+                                    <div>
+                                        <label class="block text-sm font-semibold mb-2">Highest Downline Level</label>
+                                        <select id="compressionLevel" class="calculator-input">
+                                            <option value="0">No active downlines</option>
+                                            <option value="1">Level 1 in downline</option>
+                                            <option value="2" selected>Level 2 in downline</option>
+                                            <option value="3">Level 3 in downline</option>
+                                            <option value="4">Level 4 in downline</option>
+                                            <option value="5">Level 5 in downline</option>
+                                            <option value="6">Level 6 in downline</option>
+                                        </select>
+                                        <div class="text-xs text-gray-400 mt-1">Your team bonus will be compressed by this level</div>
+                                    </div>
+                                    
+                                    <button onclick="calculateLevelBasedEarnings()" class="w-full bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold py-3 rounded-lg hover:from-yellow-500 hover:to-yellow-700 transition-all duration-300">
+                                        <i class="fas fa-calculator mr-2"></i>
+                                        Calculate Earnings
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- Calculator Results -->
+                            <div class="bg-gray-900/50 p-6 rounded-xl border border-yellow-500/20 h-fit">
+                                <h3 class="text-xl font-bold mb-4">Your Earning Breakdown</h3>
+                                
+                                <div class="space-y-3">
+                                    <!-- Direct Commissions -->
+                                    <div class="bg-green-500/10 p-3 rounded-lg border border-green-500/20">
+                                        <h4 class="font-bold text-green-400 mb-2 text-sm">Direct Commissions</h4>
+                                        <div class="space-y-1 text-xs">
+                                            <div class="flex justify-between">
+                                                <span>F1 Commission (8%)</span>
+                                                <span id="calcF1Commission" class="text-green-400 font-bold">$1,600</span>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <span>F2 Commission (5%)</span>
+                                                <span id="calcF2Commission" class="text-blue-400 font-bold">$1,500</span>
+                                            </div>
+                                            <hr class="border-green-500/20 my-1">
+                                            <div class="flex justify-between font-bold">
+                                                <span>Direct Total</span>
+                                                <span id="directTotal" class="text-green-400">$3,100</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Team Bonus Calculation -->
+                                    <div class="bg-yellow-500/10 p-3 rounded-lg border border-yellow-500/20">
+                                        <h4 class="font-bold text-yellow-400 mb-2 text-sm">Team Bonus Calculation</h4>
+                                        <div class="space-y-1 text-xs">
+                                            <div class="flex justify-between">
+                                                <span>Your Level Bonus</span>
+                                                <span id="levelBonusRate" class="text-yellow-400">3%</span>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <span>Compression Factor</span>
+                                                <span id="compressionRate" class="text-orange-400">-2%</span>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <span>Effective Rate</span>
+                                                <span id="effectiveRate" class="text-yellow-400">1%</span>
+                                            </div>
+                                            <hr class="border-yellow-500/20 my-1">
+                                            <div class="flex justify-between font-bold">
+                                                <span>Team Bonus</span>
+                                                <span id="calcTeamBonus" class="text-yellow-400">$1,000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Same-Rank Appreciation -->
+                                    <div class="bg-purple-500/10 p-3 rounded-lg border border-purple-500/20">
+                                        <h4 class="font-bold text-purple-400 mb-2 text-sm">Same-Rank Appreciation</h4>
+                                        <div class="space-y-1 text-xs">
+                                            <div class="flex justify-between">
+                                                <span>From F1 Same-Level (8%)</span>
+                                                <span id="sameRankF1" class="text-purple-400">$0</span>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <span>From F2 Same-Level (5%)</span>
+                                                <span id="sameRankF2" class="text-purple-400">$0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Total Earnings -->
+                                    <div class="bg-gradient-to-r from-green-500/20 to-yellow-500/20 p-4 rounded-lg border border-yellow-500/30">
+                                        <div class="flex justify-between items-center">
+                                            <span class="font-bold">Total Monthly Earnings</span>
+                                            <span id="calcTotalEarnings" class="text-yellow-400 font-bold text-xl">$4,100</span>
+                                        </div>
+                                        <div class="text-xs text-gray-400 mt-1">
+                                            Based on current level and team structure
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Earnings Chart -->
+                                    <div class="bg-black/20 p-3 rounded-lg">
+                                        <canvas id="levelEarningsChart" height="180"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Level Advancement Guide -->
+                        <div class="mt-8 bg-gradient-to-r from-blue-900/20 to-purple-900/20 p-6 rounded-xl border border-blue-500/20">
+                            <h3 class="text-xl font-bold text-center mb-6">
+                                <i class="fas fa-chart-line text-blue-400 mr-2"></i>
+                                Level Advancement Impact
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                                <div class="text-center p-4 bg-white/5 rounded-lg">
+                                    <div class="text-2xl font-bold text-green-400 mb-2">+67%</div>
+                                    <div class="text-gray-300">Earnings increase from Level 1 to Level 2</div>
+                                </div>
+                                <div class="text-center p-4 bg-white/5 rounded-lg">
+                                    <div class="text-2xl font-bold text-yellow-400 mb-2">+150%</div>
+                                    <div class="text-gray-300">Earnings increase from Level 2 to Level 3</div>
+                                </div>
+                                <div class="text-center p-4 bg-white/5 rounded-lg">
+                                    <div class="text-2xl font-bold text-purple-400 mb-2">+500%</div>
+                                    <div class="text-gray-300">Earnings increase from Level 3 to Level 6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Tab Content: Level System -->
+            <div id="levels" class="tab-content">
+                <section data-aos="fade-up">
+                    <h2 class="text-3xl font-bold text-center mb-12">
+                        <i class="fas fa-layer-group text-yellow-400 mr-3"></i>
+                        6-Level Advancement System
+                    </h2>
+                    
+                    <!-- Level Overview -->
+                    <div class="mb-12">
+                        <!-- Desktop Table -->
+                        <div class="level-table-desktop overflow-x-auto">
+                            <table class="w-full bg-gray-900/50 rounded-xl border border-yellow-500/20 overflow-hidden">
+                                <thead class="bg-yellow-400 text-black">
+                                    <tr>
+                                        <th class="p-4 text-left font-bold">Level</th>
+                                        <th class="p-4 text-left font-bold">Investment Req</th>
+                                        <th class="p-4 text-left font-bold">Team Sales Req</th>
+                                        <th class="p-4 text-left font-bold">Level Condition</th>
+                                        <th class="p-4 text-left font-bold">Team Bonus</th>
+                                        <th class="p-4 text-left font-bold">Cash Reward</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-gray-300">
+                                    <tr class="border-b border-gray-700">
+                                        <td class="p-4">
+                                            <div class="level-badge">
+                                                <i class="fas fa-trophy"></i>
+                                                Level 1
+                                            </div>
+                                        </td>
+                                        <td class="p-4 font-semibold">$500</td>
+                                        <td class="p-4 font-semibold">$5,000</td>
+                                        <td class="p-4">5 F1s invested $100</td>
+                                        <td class="p-4 text-green-400 font-bold">1%</td>
+                                        <td class="p-4 text-yellow-400 font-bold">$100</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="p-4">
+                                            <div class="level-badge">
+                                                <i class="fas fa-trophy"></i>
+                                                Level 2
+                                            </div>
+                                        </td>
+                                        <td class="p-4 font-semibold">$1,000</td>
+                                        <td class="p-4 font-semibold">$20,000</td>
+                                        <td class="p-4">2 Lvl2s across 2 lines</td>
+                                        <td class="p-4 text-green-400 font-bold">2%</td>
+                                        <td class="p-4 text-yellow-400 font-bold">$500</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="p-4">
+                                            <div class="level-badge">
+                                                <i class="fas fa-trophy"></i>
+                                                Level 3
+                                            </div>
+                                        </td>
+                                        <td class="p-4 font-semibold">$2,000</td>
+                                        <td class="p-4 font-semibold">$50,000</td>
+                                        <td class="p-4">2 Lvl2s across 2 lines</td>
+                                        <td class="p-4 text-green-400 font-bold">3%</td>
+                                        <td class="p-4 text-yellow-400 font-bold">$1,000</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="p-4">
+                                            <div class="level-badge">
+                                                <i class="fas fa-trophy"></i>
+                                                Level 4
+                                            </div>
+                                        </td>
+                                        <td class="p-4 font-semibold">$3,000</td>
+                                        <td class="p-4 font-semibold">$150,000</td>
+                                        <td class="p-4">3 Lvl3s across 3 lines</td>
+                                        <td class="p-4 text-green-400 font-bold">4%</td>
+                                        <td class="p-4 text-yellow-400 font-bold">$3,000</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="p-4">
+                                            <div class="level-badge">
+                                                <i class="fas fa-trophy"></i>
+                                                Level 5
+                                            </div>
+                                        </td>
+                                        <td class="p-4 font-semibold">$5,000</td>
+                                        <td class="p-4 font-semibold">$500,000</td>
+                                        <td class="p-4">3 Lvl4s across 3 lines</td>
+                                        <td class="p-4 text-green-400 font-bold">5%</td>
+                                        <td class="p-4 text-yellow-400 font-bold">$10,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4">
+                                            <div class="level-badge">
+                                                <i class="fas fa-crown"></i>
+                                                Level 6
+                                            </div>
+                                        </td>
+                                        <td class="p-4 font-semibold">$10,000</td>
+                                        <td class="p-4 font-semibold">$1,500,000</td>
+                                        <td class="p-4">3 Lvl5s across 3 lines</td>
+                                        <td class="p-4 text-green-400 font-bold">6%</td>
+                                        <td class="p-4 text-yellow-400 font-bold">$30,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Mobile Card Layout -->
+                        <div class="level-table-mobile space-y-4">
+                            <!-- Level 1 Card -->
+                            <div class="mobile-level-card">
+                                <div class="mobile-level-header">
+                                    <div class="level-badge">
+                                        <i class="fas fa-trophy"></i>
+                                        Level 1
+                                    </div>
+                                    <div class="text-green-400 font-bold">1% Bonus</div>
+                                </div>
+                                <div class="mobile-level-content">
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Investment Required</div>
+                                        <div class="mobile-req-value">$500</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Team Sales Required</div>
+                                        <div class="mobile-req-value">$5,000</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Level Condition</div>
+                                        <div class="mobile-req-value">5 F1s invested $100</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Cash Reward</div>
+                                        <div class="mobile-req-value">$100</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Level 2 Card -->
+                            <div class="mobile-level-card">
+                                <div class="mobile-level-header">
+                                    <div class="level-badge">
+                                        <i class="fas fa-trophy"></i>
+                                        Level 2
+                                    </div>
+                                    <div class="text-green-400 font-bold">2% Bonus</div>
+                                </div>
+                                <div class="mobile-level-content">
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Investment Required</div>
+                                        <div class="mobile-req-value">$1,000</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Team Sales Required</div>
+                                        <div class="mobile-req-value">$20,000</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Level Condition</div>
+                                        <div class="mobile-req-value">2 Lvl2s across 2 lines</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Cash Reward</div>
+                                        <div class="mobile-req-value">$500</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Level 3 Card -->
+                            <div class="mobile-level-card">
+                                <div class="mobile-level-header">
+                                    <div class="level-badge">
+                                        <i class="fas fa-trophy"></i>
+                                        Level 3
+                                    </div>
+                                    <div class="text-green-400 font-bold">3% Bonus</div>
+                                </div>
+                                <div class="mobile-level-content">
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Investment Required</div>
+                                        <div class="mobile-req-value">$2,000</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Team Sales Required</div>
+                                        <div class="mobile-req-value">$50,000</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Level Condition</div>
+                                        <div class="mobile-req-value">2 Lvl2s across 2 lines</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Cash Reward</div>
+                                        <div class="mobile-req-value">$1,000</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Level 4 Card -->
+                            <div class="mobile-level-card">
+                                <div class="mobile-level-header">
+                                    <div class="level-badge">
+                                        <i class="fas fa-trophy"></i>
+                                        Level 4
+                                    </div>
+                                    <div class="text-green-400 font-bold">4% Bonus</div>
+                                </div>
+                                <div class="mobile-level-content">
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Investment Required</div>
+                                        <div class="mobile-req-value">$3,000</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Team Sales Required</div>
+                                        <div class="mobile-req-value">$150,000</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Level Condition</div>
+                                        <div class="mobile-req-value">3 Lvl3s across 3 lines</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Cash Reward</div>
+                                        <div class="mobile-req-value">$3,000</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Level 5 Card -->
+                            <div class="mobile-level-card">
+                                <div class="mobile-level-header">
+                                    <div class="level-badge">
+                                        <i class="fas fa-trophy"></i>
+                                        Level 5
+                                    </div>
+                                    <div class="text-green-400 font-bold">5% Bonus</div>
+                                </div>
+                                <div class="mobile-level-content">
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Investment Required</div>
+                                        <div class="mobile-req-value">$5,000</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Team Sales Required</div>
+                                        <div class="mobile-req-value">$500,000</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Level Condition</div>
+                                        <div class="mobile-req-value">3 Lvl4s across 3 lines</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Cash Reward</div>
+                                        <div class="mobile-req-value">$10,000</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Level 6 Card -->
+                            <div class="mobile-level-card bg-gradient-to-r from-yellow-500/10 to-yellow-400/5 border-yellow-400/30">
+                                <div class="mobile-level-header">
+                                    <div class="level-badge bg-gradient-to-r from-yellow-400 to-yellow-600 text-black">
+                                        <i class="fas fa-crown"></i>
+                                        Level 6
+                                    </div>
+                                    <div class="text-yellow-400 font-bold">6% Bonus</div>
+                                </div>
+                                <div class="mobile-level-content">
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Investment Required</div>
+                                        <div class="mobile-req-value">$10,000</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Team Sales Required</div>
+                                        <div class="mobile-req-value">$1,500,000</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Level Condition</div>
+                                        <div class="mobile-req-value">3 Lvl5s across 3 lines</div>
+                                    </div>
+                                    <div class="mobile-requirement">
+                                        <div class="mobile-req-label">Cash Reward</div>
+                                        <div class="mobile-req-value text-yellow-400">$30,000</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Level Timeline -->
+                    <div class="bg-gray-900/50 p-4 md:p-8 rounded-xl border border-yellow-500/20">
+                        <h3 class="text-xl md:text-2xl font-bold mb-6 md:mb-8 text-center">
+                            <i class="fas fa-trophy text-yellow-400 mr-2"></i>
+                            Interactive Level Progression
+                        </h3>
+                        
+                        <div class="space-y-3 md:space-y-4" id="levelTimeline">
+                            <!-- Level 1 -->
+                            <div class="level-timeline-item" data-level="1">
+                                <div class="flex items-start space-x-3 md:space-x-4">
+                                    <div class="level-badge-timeline completed">
+                                        <i class="fas fa-trophy"></i>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2 gap-2">
+                                            <h4 class="font-bold text-base md:text-lg text-yellow-400">Level 1</h4>
+                                            <span class="level-status completed text-xs">✅ ACHIEVED</span>
+                                        </div>
+                                        <div class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 mb-3">
+                                            <div class="requirement-item">
+                                                <div class="text-xs text-gray-400">Investment</div>
+                                                <div class="font-semibold text-green-400 text-sm">$500</div>
+                                            </div>
+                                            <div class="requirement-item">
+                                                <div class="text-xs text-gray-400">Team Sales</div>
+                                                <div class="font-semibold text-green-400 text-sm">$5,000</div>
+                                            </div>
+                                            <div class="requirement-item col-span-2 md:col-span-1">
+                                                <div class="text-xs text-gray-400">Team Bonus</div>
+                                                <div class="font-semibold text-yellow-400 text-sm">1%</div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-container">
+                                            <div class="bg-gray-700 rounded-full h-2">
+                                                <div class="bg-green-400 w-full h-full rounded-full"></div>
+                                            </div>
+                                            <div class="text-xs text-green-400 mt-1">Requirements met</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Level 2 -->
+                            <div class="level-timeline-item" data-level="2">
+                                <div class="flex items-start space-x-3 md:space-x-4">
+                                    <div class="level-badge-timeline current">
+                                        <i class="fas fa-star"></i>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2 gap-2">
+                                            <h4 class="font-bold text-base md:text-lg text-blue-400">Level 2</h4>
+                                            <span class="level-status current text-xs">🎯 IN PROGRESS</span>
+                                        </div>
+                                        <div class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 mb-3">
+                                            <div class="requirement-item">
+                                                <div class="text-xs text-gray-400">Investment</div>
+                                                <div class="font-semibold text-blue-400 text-sm">$1,000</div>
+                                            </div>
+                                            <div class="requirement-item">
+                                                <div class="text-xs text-gray-400">Team Sales</div>
+                                                <div class="font-semibold text-blue-400 text-sm">$20,000</div>
+                                            </div>
+                                            <div class="requirement-item col-span-2 md:col-span-1">
+                                                <div class="text-xs text-gray-400">Team Bonus</div>
+                                                <div class="font-semibold text-yellow-400 text-sm">2%</div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-container">
+                                            <div class="bg-gray-700 rounded-full h-2">
+                                                <div class="bg-blue-400 level-progress-bar" style="width: 75%"></div>
+                                            </div>
+                                            <div class="text-xs text-blue-400 mt-1 level-progress-text">75% complete - $5,000 more needed</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Level 3 -->
+                            <div class="level-timeline-item" data-level="3">
+                                <div class="flex items-start space-x-3 md:space-x-4">
+                                    <div class="level-badge-timeline locked">
+                                        <i class="fas fa-lock"></i>
+                                        <span>3</span>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2 gap-2">
+                                            <h4 class="font-bold text-base md:text-lg text-gray-400">Level 3</h4>
+                                            <span class="level-status locked text-xs">🔒 LOCKED</span>
+                                        </div>
+                                        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 mb-3">
+                                            <div class="requirement-item">
+                                                <div class="text-xs text-gray-400">Investment</div>
+                                                <div class="font-semibold text-gray-300 text-sm">$2,000</div>
+                                            </div>
+                                            <div class="requirement-item">
+                                                <div class="text-xs text-gray-400">Team Sales</div>
+                                                <div class="font-semibold text-gray-300 text-sm">$50,000</div>
+                                            </div>
+                                            <div class="requirement-item col-span-2">
+                                                <div class="text-xs text-gray-400">Level Condition</div>
+                                                <div class="font-semibold text-gray-300 text-sm">2 Lvl2s across 2 lines</div>
+                                            </div>
+                                            <div class="requirement-item col-span-2 md:col-span-1">
+                                                <div class="text-xs text-gray-400">Team Bonus</div>
+                                                <div class="font-semibold text-yellow-400 text-sm">3%</div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-container">
+                                            <div class="bg-gray-700 rounded-full h-2">
+                                                <div class="bg-gray-600 w-0 h-full rounded-full"></div>
+                                            </div>
+                                            <div class="text-xs text-gray-500 mt-1">Complete Level 2 first</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Level 4 -->
+                            <div class="level-timeline-item" data-level="4">
+                                <div class="flex items-start space-x-3 md:space-x-4">
+                                    <div class="level-badge-timeline locked">
+                                        <i class="fas fa-lock"></i>
+                                        <span>4</span>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2 gap-2">
+                                            <h4 class="font-bold text-base md:text-lg text-gray-400">Level 4</h4>
+                                            <span class="level-status locked text-xs">🔒 LOCKED</span>
+                                        </div>
+                                        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 mb-3">
+                                            <div class="requirement-item">
+                                                <div class="text-xs text-gray-400">Investment</div>
+                                                <div class="font-semibold text-gray-300 text-sm">$3,000</div>
+                                            </div>
+                                            <div class="requirement-item">
+                                                <div class="text-xs text-gray-400">Team Sales</div>
+                                                <div class="font-semibold text-gray-300 text-sm">$150,000</div>
+                                            </div>
+                                            <div class="requirement-item col-span-2">
+                                                <div class="text-xs text-gray-400">Level Condition</div>
+                                                <div class="font-semibold text-gray-300 text-sm">3 Lvl3s across 3 lines</div>
+                                            </div>
+                                            <div class="requirement-item col-span-2 md:col-span-1">
+                                                <div class="text-xs text-gray-400">Team Bonus</div>
+                                                <div class="font-semibold text-yellow-400 text-sm">4%</div>
+                                            </div>
+                                        </div>
+                                        <div class="reward-preview">
+                                            <div class="text-xs text-purple-400">
+                                                <i class="fas fa-gift mr-1"></i>Unlock: $3,000 cash reward
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Level 5 -->
+                            <div class="level-timeline-item" data-level="5">
+                                <div class="flex items-start space-x-3 md:space-x-4">
+                                    <div class="level-badge-timeline locked">
+                                        <i class="fas fa-lock"></i>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2 gap-2">
+                                            <h4 class="font-bold text-base md:text-lg text-gray-400">Level 5</h4>
+                                            <span class="level-status locked text-xs">🔒 LOCKED</span>
+                                        </div>
+                                        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 mb-3">
+                                            <div class="requirement-item">
+                                                <div class="text-xs text-gray-400">Investment</div>
+                                                <div class="font-semibold text-gray-300 text-sm">$5,000</div>
+                                            </div>
+                                            <div class="requirement-item">
+                                                <div class="text-xs text-gray-400">Team Sales</div>
+                                                <div class="font-semibold text-gray-300 text-sm">$500,000</div>
+                                            </div>
+                                            <div class="requirement-item col-span-2">
+                                                <div class="text-xs text-gray-400">Level Condition</div>
+                                                <div class="font-semibold text-gray-300 text-sm">3 Lvl4s across 3 lines</div>
+                                            </div>
+                                            <div class="requirement-item col-span-2 md:col-span-1">
+                                                <div class="text-xs text-gray-400">Team Bonus</div>
+                                                <div class="font-semibold text-yellow-400 text-sm">5%</div>
+                                            </div>
+                                        </div>
+                                        <div class="reward-preview">
+                                            <div class="text-xs text-purple-400">
+                                                <i class="fas fa-gift mr-1"></i>Unlock: $10,000 cash reward
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Level 6 -->
+                            <div class="level-timeline-item" data-level="6">
+                                <div class="flex items-start space-x-3 md:space-x-4">
+                                    <div class="level-badge-timeline locked legendary">
+                                        <i class="fas fa-crown"></i>
+                                        <span>6</span>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2 gap-2">
+                                            <h4 class="font-bold text-base md:text-lg text-gray-400">Level 6 - Legendary</h4>
+                                            <span class="level-status locked text-xs">🔒 LOCKED</span>
+                                        </div>
+                                        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 mb-3">
+                                            <div class="requirement-item">
+                                                <div class="text-xs text-gray-400">Investment</div>
+                                                <div class="font-semibold text-gray-300 text-sm">$10,000</div>
+                                            </div>
+                                            <div class="requirement-item">
+                                                <div class="text-xs text-gray-400">Team Sales</div>
+                                                <div class="font-semibold text-gray-300 text-sm">$1,500,000</div>
+                                            </div>
+                                            <div class="requirement-item col-span-2">
+                                                <div class="text-xs text-gray-400">Level Condition</div>
+                                                <div class="font-semibold text-gray-300 text-sm">3 Lvl5s across 3 lines</div>
+                                            </div>
+                                            <div class="requirement-item col-span-2 md:col-span-1">
+                                                <div class="text-xs text-gray-400">Team Bonus</div>
+                                                <div class="font-semibold text-yellow-400 text-sm">6%</div>
+                                            </div>
+                                        </div>
+                                        <div class="reward-preview legendary-reward">
+                                            <div class="text-xs text-yellow-400 font-bold">
+                                                <i class="fas fa-crown mr-1"></i>Ultimate Reward: $30,000 cash + $100K+ monthly potential
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Items -->
+                        <div class="mt-8 p-4 bg-blue-500/10 rounded-lg border border-blue-500/20">
+                            <h4 class="font-bold text-blue-400 mb-3">
+                                <i class="fas fa-rocket mr-2"></i>
+                                Next Steps to Advance
+                            </h4>
+                            <div id="actionItems" class="space-y-2 text-sm">
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-green-400"></i>
+                                    <span class="text-gray-300">Increase personal investment by $200</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-users text-yellow-400"></i>
+                                    <span class="text-gray-300">Build team sales volume by $5,000 more</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-network-wired text-blue-400"></i>
+                                    <span class="text-gray-300">Focus on developing 2 Level 2 leaders across different lines</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Tab Content: Success Strategies -->
+            <div id="strategies" class="tab-content">
+                <section data-aos="fade-up">
+                    <h2 class="text-3xl font-bold text-center mb-12">
+                        <i class="fas fa-lightbulb text-yellow-400 mr-3"></i>
+                        Success Strategies & Best Practices
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Success Strategies -->
+                        <div class="bg-gray-900/50 p-8 rounded-xl border border-yellow-500/20">
+                            <h3 class="text-2xl font-bold mb-6 text-yellow-400">
+                                <i class="fas fa-rocket mr-3"></i>Success Strategies
+                            </h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i class="fas fa-users text-black text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-2">Focus on Building Strong F1 Leaders</h4>
+                                        <p class="text-gray-300 text-sm">Identify and develop key leaders who can build their own teams effectively</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i class="fas fa-graduation-cap text-black text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-2">Provide Training and Support</h4>
+                                        <p class="text-gray-300 text-sm">Offer comprehensive onboarding and ongoing education to your downlines</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i class="fas fa-chart-bar text-black text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-2">Leverage Multiple Investment Products</h4>
+                                        <p class="text-gray-300 text-sm">Promote AI Trading, GPU Mining, and DeFi Lending to maximize commissions</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i class="fas fa-handshake text-black text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-2">Build Long-term Relationships</h4>
+                                        <p class="text-gray-300 text-sm">Focus on genuine relationships rather than quick sales for sustainable success</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i class="fas fa-certificate text-black text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-2">Utilize Social Proof and Testimonials</h4>
+                                        <p class="text-gray-300 text-sm">Share success stories and results to build credibility and trust</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Marketing Materials -->
+                        <div class="bg-gray-900/50 p-8 rounded-xl border border-yellow-500/20">
+                            <h3 class="text-2xl font-bold mb-6 text-yellow-400">
+                                <i class="fas fa-tools mr-3"></i>Marketing Support
+                            </h3>
+                            
+                            <div class="space-y-4">
+                                <div class="p-4 bg-yellow-500/10 rounded-lg border border-yellow-500/20">
+                                    <h4 class="font-bold mb-2">
+                                        <i class="fas fa-file-alt mr-2"></i>Marketing Materials
+                                    </h4>
+                                    <ul class="text-sm text-gray-300 space-y-1">
+                                        <li>• Professional presentation slides</li>
+                                        <li>• Social media post templates</li>
+                                        <li>• Email marketing templates</li>
+                                        <li>• Video training materials</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="p-4 bg-blue-500/10 rounded-lg border border-blue-500/20">
+                                    <h4 class="font-bold mb-2">
+                                        <i class="fas fa-headset mr-2"></i>Support System
+                                    </h4>
+                                    <ul class="text-sm text-gray-300 space-y-1">
+                                        <li>• 24/7 affiliate support chat</li>
+                                        <li>• Weekly training webinars</li>
+                                        <li>• Personal account manager</li>
+                                        <li>• Success coaching calls</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="p-4 bg-green-500/10 rounded-lg border border-green-500/20">
+                                    <h4 class="font-bold mb-2">
+                                        <i class="fas fa-chart-line mr-2"></i>Tracking Tools
+                                    </h4>
+                                    <ul class="text-sm text-gray-300 space-y-1">
+                                        <li>• Real-time commission tracking</li>
+                                        <li>• Team performance analytics</li>
+                                        <li>• Referral link management</li>
+                                        <li>• Conversion optimization tips</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Call to Action -->
+                    <div class="text-center mt-12" data-aos="fade-up">
+                        <div class="bg-gradient-to-r from-yellow-400/20 to-yellow-600/20 p-8 rounded-xl border border-yellow-500/30 max-w-4xl mx-auto">
+                            <h3 class="text-3xl font-bold mb-6">Ready to Start Earning?</h3>
+                            <p class="text-lg text-gray-300 mb-8">
+                                Join thousands of successful affiliates earning substantial commissions with AIBOT IYI Protocol
+                            </p>
+                            <div class="space-y-4">
+                                <button class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold py-4 px-8 rounded-lg text-lg hover:from-yellow-500 hover:to-yellow-700 transition-all duration-300 mr-4">
+                                    <i class="fas fa-rocket mr-2"></i>
+                                    Join Affiliate Program
+                                </button>
+                                <a href="https://drive.google.com/drive/folders/1dI5s7AaWaMw6EF9dDAHNZZRhbpG5L_NG?usp=sharing" target="_blank" class="bg-transparent border-2 border-yellow-400 text-yellow-400 font-bold py-4 px-8 rounded-lg text-lg hover:bg-yellow-400 hover:text-black transition-all duration-300">
+                                    <i class="fas fa-download mr-2"></i>
+                                    Download Materials
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <div id="footer"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/components.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Tab functionality
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all tab buttons
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => button.classList.remove('active'));
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab button
+            event.target.classList.add('active');
+        }
+
+        // Level-based calculator functionality
+        function calculateLevelBasedEarnings() {
+            // Get input values
+            const currentLevel = parseInt(document.getElementById('currentLevel').value) || 1;
+            const teamVolume = parseFloat(document.getElementById('teamVolume').value) || 0;
+            const f1Volume = parseFloat(document.getElementById('f1Volume').value) || 0;
+            const f2Volume = parseFloat(document.getElementById('f2Volume').value) || 0;
+            const compressionLevel = parseInt(document.getElementById('compressionLevel').value) || 0;
+
+            // Calculate direct commissions (fixed rates)
+            const f1Commission = f1Volume * 0.08; // 8% on F1 investments
+            const f2Commission = f2Volume * 0.05; // 5% on F2 investments
+            const directTotal = f1Commission + f2Commission;
+
+            // Calculate team bonus with compression
+            const levelBonusRate = currentLevel / 100; // 1% to 6%
+            const compressionRate = compressionLevel / 100;
+            const effectiveRate = Math.max(0, levelBonusRate - compressionRate);
+            const teamBonus = teamVolume * effectiveRate;
+
+            // Same-rank appreciation (placeholder - requires upline data)
+            const sameRankF1 = 0; // Would need upline same-level data
+            const sameRankF2 = 0; // Would need upline same-level data
+
+            // Total earnings
+            const totalEarnings = directTotal + teamBonus + sameRankF1 + sameRankF2;
+
+            // Update display
+            document.getElementById('calcF1Commission').textContent = '$' + f1Commission.toLocaleString();
+            document.getElementById('calcF2Commission').textContent = '$' + f2Commission.toLocaleString();
+            document.getElementById('directTotal').textContent = '$' + directTotal.toLocaleString();
+            
+            document.getElementById('levelBonusRate').textContent = (levelBonusRate * 100) + '%';
+            document.getElementById('compressionRate').textContent = '-' + (compressionRate * 100) + '%';
+            document.getElementById('effectiveRate').textContent = (effectiveRate * 100) + '%';
+            document.getElementById('calcTeamBonus').textContent = '$' + teamBonus.toLocaleString();
+            
+            document.getElementById('sameRankF1').textContent = '$' + sameRankF1.toLocaleString();
+            document.getElementById('sameRankF2').textContent = '$' + sameRankF2.toLocaleString();
+            document.getElementById('calcTotalEarnings').textContent = '$' + totalEarnings.toLocaleString();
+
+            // Update chart and timeline
+            updateLevelEarningsChart(f1Commission, f2Commission, teamBonus, sameRankF1 + sameRankF2);
+            updateLevelTimeline(currentLevel, teamVolume, f1Volume, f2Volume);
+        }
+
+        // Update level timeline based on inputs
+        function updateLevelTimeline(currentLevel, teamVolume, f1Volume, f2Volume) {
+            const totalInvestment = f1Volume + f2Volume;
+            
+            // Level requirements
+            const levelReqs = [
+                { investment: 500, teamSales: 5000, cashReward: 100 },
+                { investment: 1000, teamSales: 20000, cashReward: 500 },
+                { investment: 2000, teamSales: 50000, cashReward: 1000 },
+                { investment: 3000, teamSales: 150000, cashReward: 3000 },
+                { investment: 5000, teamSales: 500000, cashReward: 10000 },
+                { investment: 10000, teamSales: 1500000, cashReward: 30000 }
+            ];
+
+            // Update timeline for each level
+            for (let i = 1; i <= 6; i++) {
+                const item = document.querySelector(`[data-level="${i}"]`);
+                const badge = item.querySelector('.level-badge-timeline');
+                const status = item.querySelector('.level-status');
+                const progressBar = item.querySelector('.level-progress-bar');
+                const progressText = item.querySelector('.level-progress-text');
+                
+                if (i < currentLevel) {
+                    // Completed levels
+                    badge.className = 'level-badge-timeline completed';
+                    status.className = 'level-status completed';
+                    status.textContent = '✅ ACHIEVED';
+                    if (progressBar) {
+                        progressBar.style.width = '100%';
+                        progressBar.className = 'bg-green-400 w-full h-full rounded-full';
+                    }
+                    if (progressText) {
+                        progressText.textContent = 'Requirements met';
+                        progressText.className = 'text-xs text-green-400 mt-1';
+                    }
+                } else if (i == currentLevel) {
+                    // Current level
+                    badge.className = 'level-badge-timeline completed';
+                    status.className = 'level-status completed';
+                    status.textContent = '✅ CURRENT LEVEL';
+                    if (progressBar) {
+                        progressBar.style.width = '100%';
+                        progressBar.className = 'bg-green-400 w-full h-full rounded-full';
+                    }
+                    if (progressText) {
+                        progressText.textContent = 'Current achievement level';
+                        progressText.className = 'text-xs text-green-400 mt-1';
+                    }
+                } else if (i == currentLevel + 1) {
+                    // Next level (in progress)
+                    const req = levelReqs[i - 1];
+                    const investmentProgress = Math.min(100, (totalInvestment / req.investment) * 100);
+                    const salesProgress = Math.min(100, (teamVolume / req.teamSales) * 100);
+                    const overallProgress = Math.min(investmentProgress, salesProgress);
+                    
+                    badge.className = 'level-badge-timeline current';
+                    status.className = 'level-status current';
+                    status.textContent = '🎯 NEXT TARGET';
+                    
+                    if (progressBar) {
+                        progressBar.style.width = overallProgress + '%';
+                        progressBar.className = 'bg-blue-400 level-progress-bar h-full rounded-full';
+                    }
+                    if (progressText) {
+                        const investmentNeeded = Math.max(0, req.investment - totalInvestment);
+                        const salesNeeded = Math.max(0, req.teamSales - teamVolume);
+                        if (investmentNeeded > 0 || salesNeeded > 0) {
+                            progressText.textContent = `${Math.round(overallProgress)}% complete - Need $${investmentNeeded.toLocaleString()} investment, $${salesNeeded.toLocaleString()} team sales`;
+                        } else {
+                            progressText.textContent = 'Ready to advance!';
+                        }
+                        progressText.className = 'text-xs text-blue-400 mt-1 level-progress-text';
+                    }
+                } else {
+                    // Locked levels
+                    badge.className = i === 6 ? 'level-badge-timeline locked legendary' : 'level-badge-timeline locked';
+                    status.className = 'level-status locked';
+                    status.textContent = '🔒 LOCKED';
+                    if (progressBar) {
+                        progressBar.style.width = '0%';
+                        progressBar.className = 'bg-gray-600 level-progress-bar h-full rounded-full';
+                    }
+                    if (progressText) {
+                        progressText.textContent = `Complete Level ${i-1} first`;
+                        progressText.className = 'text-xs text-gray-500 mt-1 level-progress-text';
+                    }
+                }
+            }
+
+            // Update action items
+            updateActionItems(currentLevel, teamVolume, totalInvestment, levelReqs);
+        }
+
+        // Update action items based on current status
+        function updateActionItems(currentLevel, teamVolume, totalInvestment, levelReqs) {
+            const actionItems = document.getElementById('actionItems');
+            const nextLevel = currentLevel + 1;
+            
+            if (nextLevel <= 6) {
+                const req = levelReqs[nextLevel - 1];
+                const investmentNeeded = Math.max(0, req.investment - totalInvestment);
+                const salesNeeded = Math.max(0, req.teamSales - teamVolume);
+                
+                let html = '';
+                
+                if (investmentNeeded > 0) {
+                    html += `
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-dollar-sign text-yellow-400"></i>
+                            <span class="text-gray-300">Increase investment by $${investmentNeeded.toLocaleString()} to reach Level ${nextLevel}</span>
+                        </div>
+                    `;
+                }
+                
+                if (salesNeeded > 0) {
+                    html += `
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-users text-blue-400"></i>
+                            <span class="text-gray-300">Build team sales by $${salesNeeded.toLocaleString()} more</span>
+                        </div>
+                    `;
+                }
+                
+                if (nextLevel >= 3) {
+                    html += `
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-network-wired text-purple-400"></i>
+                            <span class="text-gray-300">Develop ${nextLevel-1} Level ${nextLevel-1} leaders across ${nextLevel-1} different lines</span>
+                        </div>
+                    `;
+                }
+                
+                if (investmentNeeded === 0 && salesNeeded === 0) {
+                    html = `
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-green-400"></i>
+                            <span class="text-green-400 font-semibold">Ready to advance to Level ${nextLevel}! Contact support to upgrade.</span>
+                        </div>
+                    `;
+                }
+                
+                actionItems.innerHTML = html;
+            } else {
+                actionItems.innerHTML = `
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-crown text-yellow-400"></i>
+                        <span class="text-yellow-400 font-semibold">Congratulations! You've reached the highest level!</span>
+                    </div>
+                `;
+            }
+        }
+
+        function updateLevelEarningsChart(f1, f2, team, sameRank) {
+            const ctx = document.getElementById('levelEarningsChart');
+            if (ctx) {
+                // Clear previous chart
+                if (window.levelChart) {
+                    window.levelChart.destroy();
+                }
+                
+                window.levelChart = new Chart(ctx.getContext('2d'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['F1 Commission (8%)', 'F2 Commission (5%)', 'Team Bonus', 'Same-Rank Appreciation'],
+                        datasets: [{
+                            data: [f1, f2, team, sameRank],
+                            backgroundColor: [
+                                'rgba(34, 197, 94, 0.8)',
+                                'rgba(59, 130, 246, 0.8)',
+                                'rgba(251, 191, 36, 0.8)',
+                                'rgba(147, 51, 234, 0.8)'
+                            ],
+                            borderColor: [
+                                'rgb(34, 197, 94)',
+                                'rgb(59, 130, 246)',
+                                'rgb(251, 191, 36)',
+                                'rgb(147, 51, 234)'
+                            ],
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    color: '#9CA3AF',
+                                    padding: 15,
+                                    font: {
+                                        size: 11
+                                    }
+                                }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        const label = context.label || '';
+                                        const value = '$' + context.parsed.toLocaleString();
+                                        const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                        const percentage = ((context.parsed / total) * 100).toFixed(1);
+                                        return label + ': ' + value + ' (' + percentage + '%)';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        }
+
+        // Level progression chart
+        function createLevelChart() {
+            const ctx = document.getElementById('levelChart');
+            if (ctx) {
+                new Chart(ctx.getContext('2d'), {
+                    type: 'line',
+                    data: {
+                        labels: ['Level 1', 'Level 2', 'Level 3', 'Level 4', 'Level 5', 'Level 6'],
+                        datasets: [{
+                            label: 'Team Bonus %',
+                            data: [1, 2, 3, 4, 5, 6],
+                            borderColor: '#FBBF24',
+                            backgroundColor: 'rgba(251, 191, 36, 0.1)',
+                            tension: 0.4,
+                            fill: true
+                        }, {
+                            label: 'Cash Rewards ($K)',
+                            data: [0.1, 0.5, 1, 3, 10, 30],
+                            borderColor: '#10B981',
+                            backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                            tension: 0.4,
+                            fill: true
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                grid: {
+                                    color: 'rgba(255, 255, 255, 0.1)'
+                                },
+                                ticks: {
+                                    color: '#9CA3AF'
+                                }
+                            },
+                            x: {
+                                grid: {
+                                    color: 'rgba(255, 255, 255, 0.1)'
+                                },
+                                ticks: {
+                                    color: '#9CA3AF'
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                labels: {
+                                    color: '#9CA3AF'
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        }
+
+        // Initialize calculator and charts
+        document.addEventListener('DOMContentLoaded', function() {
+            calculateLevelBasedEarnings();
+            createLevelChart();
+        });
+
+        // Add input event listeners for real-time calculation
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = ['currentLevel', 'teamVolume', 'f1Volume', 'f2Volume', 'compressionLevel'];
+            inputs.forEach(id => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.addEventListener('input', calculateLevelBasedEarnings);
+                    element.addEventListener('change', calculateLevelBasedEarnings);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

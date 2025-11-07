@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Bot Trading - 87.3% Win Rate Algorithmic Trading | AIBOT IYI Protocol</title>
+    <meta name="description" content="Advanced AI Bot Trading with 87.3% win rate and 12-15% guaranteed monthly returns. Professional algorithmic trading powered by artificial intelligence and machine learning.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="AI bot trading, algorithmic trading, automated trading bot, cryptocurrency trading, AI trading algorithm, guaranteed trading returns, high frequency trading">
+    <meta name="author" content="AIBOT IYI Protocol">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://docs.aibotiyi.com/aibot-trading.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://docs.aibotiyi.com/aibot-trading.html">
+    <meta property="og:title" content="AI Bot Trading - 87.3% Win Rate Algorithmic Trading">
+    <meta property="og:description" content="Advanced AI Bot Trading with 87.3% win rate and 12-15% guaranteed monthly returns. Professional algorithmic trading system.">
+    <meta property="og:image" content="https://docs.aibotiyi.com/images/aibot-trading-og.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://docs.aibotiyi.com/aibot-trading.html">
+    <meta property="twitter:title" content="AI Bot Trading - 87.3% Win Rate Algorithmic Trading">
+    <meta property="twitter:description" content="Advanced AI Bot Trading with 87.3% win rate and 12-15% guaranteed monthly returns. Professional algorithmic trading system.">
+    <meta property="twitter:image" content="https://docs.aibotiyi.com/images/aibot-trading-twitter.png">
+    <meta property="twitter:site" content="@AIBotIYI">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Chart.js for performance analytics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon180.png">
+</head>
+<body class="bg-black text-white">
+    
+    <!-- Sidebar -->
+    <div id="sidebar"></div>
+    
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <!-- Header for mobile -->
+        <div id="header" class="lg:hidden"></div>
+        
+        <!-- Page Header -->
+        <section class="hero-gradient py-12 px-6">
+            <div class="container mx-auto max-w-6xl">
+                <div data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-robot text-yellow-400 text-3xl mr-4"></i>
+                        <div>
+                            <h1 class="text-4xl md:text-5xl font-bold text-gradient mb-2">
+                                AI Bot Trading
+                            </h1>
+                            <p class="text-xl text-gray-300">
+                                Flagship Product - Advanced Algorithmic Trading
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-trophy text-yellow-400"></i>
+                            </div>
+                            <div class="stat-value">87.3%</div>
+                            <div class="stat-label">Win Rate</div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-chart-line text-green-400"></i>
+                            </div>
+                            <div class="stat-value">12-15%</div>
+                            <div class="stat-label">Monthly Returns</div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-shield-alt text-blue-400"></i>
+                            </div>
+                            <div class="stat-value">GUARANTEED</div>
+                            <div class="stat-label">Performance</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container mx-auto max-w-6xl px-6 py-12">
+            
+            <!-- AI Trading Performance Chart -->
+            <section class="mb-16" data-aos="fade-up">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-gradient mb-8">
+                        <i class="fas fa-chart-line mr-3"></i>
+                        AI Trading Performance
+                    </h2>
+                    
+                    <div class="performance-display">
+                        <div class="performance-header">
+                            <h3 class="performance-title">AI trading performance</h3>
+                            <div class="win-rate-badge">87.3% WIN RATE</div>
+                        </div>
+                        
+                        <div class="performance-chart-container">
+                            <canvas id="aiTradingChart" style="height: 400px;"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Investment Specifications -->
+            <section class="mb-16" data-aos="fade-up">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-gradient mb-8">
+                        <i class="fas fa-cogs mr-3"></i>
+                        Investment Specifications
+                    </h2>
+                    
+                    <div class="investment-specs-container">
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <div class="spec-icon">
+                                    <i class="fas fa-dollar-sign text-yellow-400"></i>
+                                </div>
+                                <div class="spec-content">
+                                    <div class="spec-label">Range</div>
+                                    <div class="spec-value">$100 - $1,000,000 (Individuals)</div>
+                                </div>
+                            </div>
+                            
+                            <div class="spec-item">
+                                <div class="spec-icon">
+                                    <i class="fas fa-star text-purple-400"></i>
+                                </div>
+                                <div class="spec-content">
+                                    <div class="spec-label">Special</div>
+                                    <div class="spec-value">$1M+ for professional investment funds only</div>
+                                </div>
+                            </div>
+                            
+                            <div class="spec-item">
+                                <div class="spec-icon">
+                                    <i class="fas fa-percentage text-green-400"></i>
+                                </div>
+                                <div class="spec-content">
+                                    <div class="spec-label">Returns</div>
+                                    <div class="spec-value">12-15% monthly (GUARANTEED)</div>
+                                </div>
+                            </div>
+                            
+                            <div class="spec-item">
+                                <div class="spec-icon">
+                                    <i class="fas fa-coins text-blue-400"></i>
+                                </div>
+                                <div class="spec-content">
+                                    <div class="spec-label">Funding Options</div>
+                                    <div class="spec-value">Hybrid funding option: 10%-50% AIB + USDT</div>
+                                </div>
+                            </div>
+                            
+                            <div class="spec-item">
+                                <div class="spec-icon">
+                                    <i class="fas fa-hand-holding-usd text-orange-400"></i>
+                                </div>
+                                <div class="spec-content">
+                                    <div class="spec-label">Max Withdrawal</div>
+                                    <div class="spec-value">300% (including profit + commission)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Payment Options -->
+            <section class="mb-16" data-aos="fade-up">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-gradient mb-8">
+                        <i class="fas fa-credit-card mr-3"></i>
+                        Payment Options
+                    </h2>
+                    
+                    <div class="bg-gradient-to-br from-gray-900/50 to-gray-800/30 rounded-xl border border-gray-700/50 overflow-hidden">
+                        <!-- Table Header -->
+                        <div class="bg-gray-800/40 border-b border-gray-700/50 grid grid-cols-3 gap-4 px-6 py-4">
+                            <div class="text-sm font-semibold text-gray-300">Option</div>
+                            <div class="text-sm font-semibold text-gray-300">Funding Option</div>
+                            <div class="text-sm font-semibold text-gray-300">Lending Vault Bonus</div>
+                        </div>
+                        
+                        <!-- Table Body -->
+                        <div class="divide-y divide-gray-700/30">
+                            <div class="grid grid-cols-3 gap-4 px-6 py-4 hover:bg-gray-800/20 transition-colors">
+                                <div class="text-gray-300 font-medium">Option 1</div>
+                                <div class="text-white">10% AIB & 90% USDT</div>
+                                <div class="text-yellow-400 font-semibold">1.1X</div>
+                            </div>
+                            
+                            <div class="grid grid-cols-3 gap-4 px-6 py-4 hover:bg-gray-800/20 transition-colors">
+                                <div class="text-gray-300 font-medium">Option 2</div>
+                                <div class="text-white">20% AIB & 80% USDT</div>
+                                <div class="text-yellow-400 font-semibold">1.2X</div>
+                            </div>
+                            
+                            <div class="grid grid-cols-3 gap-4 px-6 py-4 hover:bg-gray-800/20 transition-colors">
+                                <div class="text-gray-300 font-medium">Option 3</div>
+                                <div class="text-white">30% AIB & 70% USDT</div>
+                                <div class="text-yellow-400 font-semibold">1.5X</div>
+                            </div>
+                            
+                            <div class="grid grid-cols-3 gap-4 px-6 py-4 hover:bg-gray-800/20 transition-colors">
+                                <div class="text-gray-300 font-medium">Option 4</div>
+                                <div class="text-white">50% AIB & 50% USDT</div>
+                                <div class="text-yellow-400 font-semibold">2.0X</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Information -->
+                    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-center space-x-3 p-4 bg-gradient-to-r from-yellow-900/20 to-yellow-600/10 rounded-lg border border-yellow-500/20">
+                            <i class="fas fa-unlock text-yellow-400 text-xl"></i>
+                            <span class="text-gray-300">AIB is unlocked and can be OTC-swapped to USDT anytime with 0% fee</span>
+                        </div>
+                        <div class="flex items-center space-x-3 p-4 bg-gradient-to-r from-green-900/20 to-green-600/10 rounded-lg border border-green-500/20">
+                            <i class="fas fa-hand-holding-heart text-green-400 text-xl"></i>
+                            <span class="text-gray-300">Options only affect lending vault mechanism bonuses</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Bot Features -->
+            <section class="mb-16" data-aos="fade-up">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-gradient mb-8">
+                        <i class="fas fa-brain mr-3"></i>
+                        AI Bot Features
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-lightning-bolt"></i>
+                            </div>
+                            <h3 class="feature-title">High-Frequency Trading</h3>
+                            <p class="feature-description">
+                                Execute thousands of trades per second using advanced algorithms and real-time market data analysis.
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-virus"></i>
+                            </div>
+                            <h3 class="feature-title">Risk Management</h3>
+                            <p class="feature-description">
+                                Sophisticated risk controls with stop-loss mechanisms and portfolio diversification strategies.
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3 class="feature-title">Market Analysis</h3>
+                            <p class="feature-description">
+                                Deep learning algorithms analyze market trends, news sentiment, and technical indicators.
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3 class="feature-title">24/7 Operations</h3>
+                            <p class="feature-description">
+                                Continuous trading operations across global markets without human intervention required.
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <h3 class="feature-title">Portfolio Optimization</h3>
+                            <p class="feature-description">
+                                Dynamic portfolio rebalancing based on market conditions and performance metrics.
+                            </p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3 class="feature-title">Real-time Monitoring</h3>
+                            <p class="feature-description">
+                                Live performance tracking with detailed analytics and reporting dashboard.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Status Link -->
+            <section class="mb-16" data-aos="fade-up">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-gradient mb-8">
+                        <i class="fas fa-heartbeat mr-3"></i>
+                        System Status
+                    </h2>
+                    
+                    <div class="status-container">
+                        <div class="status-card">
+                            <div class="status-indicator online">
+                                <div class="pulse"></div>
+                            </div>
+                            <div class="status-content">
+                                <h3 class="status-title">AI Bot Trading System</h3>
+                                <div class="status-description">All systems operational</div>
+                                <a href="https://status.aibotiyi.com/" target="_blank" class="status-link">
+                                    <i class="fas fa-external-link-alt mr-2"></i>
+                                    View Live Status Dashboard
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <div id="footer"></div>
+    </div>
+
+    <!-- Load Components -->
+    <script src="js/components.js"></script>
+    
+    <!-- AI Trading Performance Chart -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('aiTradingChart').getContext('2d');
+            
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    datasets: [{
+                        label: 'AI Trading Performance (%)',
+                        data: [85.2, 86.8, 87.1, 86.5, 87.9, 86.3, 88.1, 87.5, 86.9, 87.7, 88.3, 87.1],
+                        borderColor: '#eab308',
+                        backgroundColor: 'rgba(234, 179, 8, 0.1)',
+                        borderWidth: 3,
+                        fill: false,
+                        tension: 0.1,
+                        pointBackgroundColor: '#eab308',
+                        pointBorderColor: '#ffffff',
+                        pointBorderWidth: 2,
+                        pointRadius: 6
+                    }, {
+                        label: 'Market Benchmark (%)',
+                        data: [48.2, 49.1, 47.8, 50.2, 49.8, 48.5, 51.1, 49.9, 48.7, 50.3, 49.2, 48.9],
+                        borderColor: '#6b7280',
+                        backgroundColor: 'rgba(107, 114, 128, 0.1)',
+                        borderWidth: 2,
+                        fill: false,
+                        tension: 0.1,
+                        pointBackgroundColor: '#6b7280',
+                        pointBorderColor: '#ffffff',
+                        pointBorderWidth: 1,
+                        pointRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                color: '#ffffff',
+                                font: {
+                                    size: 12
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.1)'
+                            },
+                            ticks: {
+                                color: '#9ca3af'
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.1)'
+                            },
+                            ticks: {
+                                color: '#9ca3af',
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    },
+                    elements: {
+                        line: {
+                            borderCapStyle: 'round'
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>

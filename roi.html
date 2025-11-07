@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROI Calculator - AIBOT IYI Protocol Documentation</title>
+    <meta name="description" content="Advanced ROI calculators for AI Bot Trading, GPU Mining, and Lending Vaults - AIBOT IYI Protocol.">
+    <meta name="keywords" content="ROI calculator, return on investment, profit calculator, AI trading returns, GPU mining profits, lending vault returns, investment calculator, yield calculator">
+    <meta name="author" content="AIBOT IYI Protocol">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://docs.aibotiyi.com/roi.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://docs.aibotiyi.com/roi.html">
+    <meta property="og:title" content="ROI Calculator - AIBOT IYI Protocol">
+    <meta property="og:description" content="Calculate your potential returns with advanced ROI calculators for AI trading, GPU mining, and DeFi lending across AIBOT IYI ecosystem.">
+    <meta property="og:image" content="https://aibotiyi.com/images/roi-calculator-preview.jpg">
+    <meta property="og:site_name" content="AIBOT IYI Protocol Documentation">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://docs.aibotiyi.com/roi.html">
+    <meta property="twitter:title" content="ROI Calculator - AIBOT IYI Protocol">
+    <meta property="twitter:description" content="Advanced profit calculators: AI bot trading (87.3% win rate), GPU mining (guaranteed returns), and DeFi lending (up to 72% APY).">
+    <meta property="twitter:image" content="https://aibotiyi.com/images/roi-calculator-preview.jpg">
+    <meta property="twitter:site" content="@aibotiyi">
+    <meta property="twitter:creator" content="@aibotiyi">
+    
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#FBBF24">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "AIBOT IYI ROI Calculator",
+        "description": "Advanced calculator for investment returns across AI trading, GPU mining, and DeFi lending",
+        "applicationCategory": "Finance",
+        "operatingSystem": "Web Browser",
+        "provider": {
+            "@type": "Organization",
+            "name": "AIBOT IYI Protocol",
+            "url": "https://aibotiyi.com",
+            "sameAs": [
+                "https://twitter.com/aibotiyi",
+                "https://t.me/aibotiyi",
+                "https://youtube.com/@aibotiyi",
+                "https://github.com/aibotiyi"
+            ]
+        }
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Chart.js for ROI visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon180.png">
+</head>
+<body class="bg-black text-white">
+    
+    <!-- Sidebar -->
+    <div id="sidebar"></div>
+    
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <!-- Header for mobile -->
+        <div id="header" class="lg:hidden"></div>
+        
+        <!-- Page Header -->
+        <section class="hero-gradient py-12 px-6">
+            <div class="container mx-auto max-w-6xl">
+                <div data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-calculator text-yellow-400 text-4xl mr-4"></i>
+                        <div>
+                            <h1 class="text-4xl md:text-6xl font-bold text-gradient mb-2">
+                                ROI Calculator Suite
+                            </h1>
+                            <p class="text-xl text-gray-300">
+                                Calculate Returns Across All Investment Products
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+                        <div class="stat-card-enhanced">
+                            <div class="stat-icon-enhanced">
+                                <i class="fas fa-robot text-yellow-400"></i>
+                            </div>
+                            <div class="stat-value-enhanced">87.3%</div>
+                            <div class="stat-label-enhanced">AI Bot Win Rate</div>
+                        </div>
+                        
+                        <div class="stat-card-enhanced">
+                            <div class="stat-icon-enhanced">
+                                <i class="fas fa-server text-blue-400"></i>
+                            </div>
+                            <div class="stat-value-enhanced">24/7</div>
+                            <div class="stat-label-enhanced">GPU Operations</div>
+                        </div>
+                        
+                        <div class="stat-card-enhanced">
+                            <div class="stat-icon-enhanced">
+                                <i class="fas fa-vault text-green-400"></i>
+                            </div>
+                            <div class="stat-value-enhanced">72%</div>
+                            <div class="stat-label-enhanced">Max Vault APY</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container mx-auto max-w-6xl px-6 py-12">
+            
+            <!-- Calculator Selection Tabs -->
+            <section class="mb-12" data-aos="fade-up">
+                <div class="calculator-tabs">
+                    <button class="tab-button active" data-tab="aibot-trading">
+                        <i class="fas fa-robot"></i>
+                        <span>AI Bot Trading</span>
+                    </button>
+                    <button class="tab-button" data-tab="gpu-mining">
+                        <i class="fas fa-server"></i>
+                        <span>AI GPU Machine</span>
+                    </button>
+                    <button class="tab-button" data-tab="lending-vault">
+                        <i class="fas fa-vault"></i>
+                        <span>AIB Lending Vault</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- AI Bot Trading Calculator -->
+            <section id="aibot-trading" class="calculator-section active" data-aos="fade-up">
+                <div class="calculator-container">
+                    <div class="calculator-header">
+                        <div class="calculator-title">
+                            <i class="fas fa-robot text-yellow-400 mr-3"></i>
+                            AI Bot Trading ROI Calculator
+                        </div>
+                        <div class="calculator-subtitle">
+                            Calculate your returns with our flagship AI trading system
+                        </div>
+                    </div>
+                    
+                    <div class="calculator-content">
+                        <div class="calculator-inputs">
+                            <div class="input-group">
+                                <label class="input-label">Investment Amount (USD)</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-dollar-sign input-icon"></i>
+                                    <input type="number" id="aibot-investment" class="calculator-input" placeholder="10000" min="100" max="1000000">
+                                </div>
+                                <div class="input-hint">Range: $100 - $1,000,000</div>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label class="input-label">Monthly Return Rate (%)</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-percentage input-icon"></i>
+                                    <input type="number" id="aibot-rate" class="calculator-input" placeholder="13.5" min="12" max="15" step="0.1">
+                                </div>
+                                <div class="input-hint">Range: 12% - 15% monthly</div>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label class="input-label">Investment Period (Months)</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-calendar input-icon"></i>
+                                    <input type="number" id="aibot-period" class="calculator-input" placeholder="12" min="1" max="36">
+                                </div>
+                            </div>
+                            
+                            <button class="calculate-btn" onclick="calculateAIBot()">
+                                <i class="fas fa-calculator mr-2"></i>
+                                Calculate Returns
+                            </button>
+                        </div>
+                        
+                        <div class="calculator-results">
+                            <div class="results-header">
+                                <h3>AI Bot Trading Results</h3>
+                                <div class="profit-indicator" id="aibot-profit-indicator">
+                                    <i class="fas fa-trending-up"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="results-grid">
+                                <div class="result-item">
+                                    <div class="result-label">Monthly Return</div>
+                                    <div class="result-value" id="aibot-monthly">$0</div>
+                                </div>
+                                <div class="result-item">
+                                    <div class="result-label">Total Profit</div>
+                                    <div class="result-value" id="aibot-total-profit">$0</div>
+                                </div>
+                                <div class="result-item">
+                                    <div class="result-label">Total Return</div>
+                                    <div class="result-value" id="aibot-total-return">$0</div>
+                                </div>
+                                <div class="result-item">
+                                    <div class="result-label">ROI Percentage</div>
+                                    <div class="result-value" id="aibot-roi">0%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="chart-container">
+                                <canvas id="aibotChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GPU Mining Calculator -->
+            <section id="gpu-mining" class="calculator-section" data-aos="fade-up">
+                <div class="calculator-container">
+                    <div class="calculator-header">
+                        <div class="calculator-title">
+                            <i class="fas fa-server text-blue-400 mr-3"></i>
+                            AI GPU Machine ROI Calculator
+                        </div>
+                        <div class="calculator-subtitle">
+                            Calculate returns from AI GPU machine investments
+                        </div>
+                    </div>
+                    
+                    <div class="calculator-content">
+                        <div class="calculator-inputs">
+                            <div class="input-group">
+                                <label class="input-label">Machine Type</label>
+                                <select id="gpu-machine" class="calculator-select">
+                                    <option value="nexus">Nexus A1 - $3,200 (15% Monthly ROI) - 12 months free</option>
+                                    <option value="quantum">Quantum X7 - $18,500 (18% Monthly ROI) - 10 months free</option>
+                                    <option value="titan">Titan Z9 - $48,000 (22% Monthly ROI) - 8 months free</option>
+                                </select>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label class="input-label">Number of Machines</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-server input-icon"></i>
+                                    <input type="number" id="gpu-quantity" class="calculator-input" placeholder="1" min="1" max="100">
+                                </div>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label class="input-label">Operation Period (Months)</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-calendar input-icon"></i>
+                                    <input type="number" id="gpu-period" class="calculator-input" placeholder="12" min="1" max="60">
+                                </div>
+                            </div>
+                            
+
+                            
+                            <button class="calculate-btn" onclick="calculateGPU()">
+                                <i class="fas fa-calculator mr-2"></i>
+                                Calculate Returns
+                            </button>
+                        </div>
+                        
+                        <div class="calculator-results">
+                            <div class="results-header">
+                                <h3>GPU Mining Results</h3>
+                                <div class="profit-indicator" id="gpu-profit-indicator">
+                                    <i class="fas fa-trending-up"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="results-grid">
+                                <div class="result-item">
+                                    <div class="result-label">Avg Net Monthly</div>
+                                    <div class="result-value" id="gpu-monthly">$0</div>
+                                </div>
+                                <div class="result-item">
+                                    <div class="result-label">Total Investment</div>
+                                    <div class="result-value" id="gpu-investment">$0</div>
+                                </div>
+                                <div class="result-item">
+                                    <div class="result-label">Net Profit</div>
+                                    <div class="result-value" id="gpu-profit">$0</div>
+                                </div>
+                                <div class="result-item">
+                                    <div class="result-label">ROI Percentage</div>
+                                    <div class="result-value" id="gpu-roi">0%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="chart-container">
+                                <canvas id="gpuChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lending Vault Calculator -->
+            <section id="lending-vault" class="calculator-section" data-aos="fade-up">
+                <div class="calculator-container">
+                    <div class="calculator-header">
+                        <div class="calculator-title">
+                            <i class="fas fa-vault text-green-400 mr-3"></i>
+                            AIB Lending Vault ROI Calculator
+                        </div>
+                        <div class="calculator-subtitle">
+                            Calculate returns from AIB lending vault tiers
+                        </div>
+                    </div>
+                    
+                    <div class="calculator-content">
+                        <div class="calculator-inputs">
+                            <div class="input-group">
+                                <label class="input-label">Vault Tier</label>
+                                <select id="vault-tier" class="calculator-select">
+                                    <option value="conservative">Conservative - 13.2% APY (3 months)</option>
+                                    <option value="moderate">Moderate - 21.6% APY (6 months)</option>
+                                    <option value="aggressive">Aggressive - 36% APY (9 months)</option>
+                                    <option value="premium">Premium - 72% APY (12 months)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label class="input-label">AIB Amount</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-coins input-icon"></i>
+                                    <input type="number" id="vault-amount" class="calculator-input" placeholder="1000" min="1">
+                                </div>
+                                <div class="input-hint">AIB tokens to deposit</div>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label class="input-label">AIB Price (USD)</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-dollar-sign input-icon"></i>
+                                    <input type="number" id="vault-price" class="calculator-input" placeholder="2.50" step="0.01" min="0.01">
+                                </div>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label class="input-label">
+                                    <input type="checkbox" id="vault-compound" class="mr-2">
+                                    Auto-compound rewards
+                                </label>
+                            </div>
+                            
+                            <button class="calculate-btn" onclick="calculateVault()">
+                                <i class="fas fa-calculator mr-2"></i>
+                                Calculate Returns
+                            </button>
+                        </div>
+                        
+                        <div class="calculator-results">
+                            <div class="results-header">
+                                <h3>Lending Vault Results</h3>
+                                <div class="profit-indicator" id="vault-profit-indicator">
+                                    <i class="fas fa-trending-up"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="results-grid">
+                                <div class="result-item">
+                                    <div class="result-label">Initial Value</div>
+                                    <div class="result-value" id="vault-initial">$0</div>
+                                </div>
+                                <div class="result-item">
+                                    <div class="result-label">Final AIB Amount</div>
+                                    <div class="result-value" id="vault-final-tokens">0 AIB</div>
+                                </div>
+                                <div class="result-item">
+                                    <div class="result-label">Final USD Value</div>
+                                    <div class="result-value" id="vault-final-value">$0</div>
+                                </div>
+                                <div class="result-item">
+                                    <div class="result-label">Total Profit</div>
+                                    <div class="result-value" id="vault-profit">$0</div>
+                                </div>
+                            </div>
+                            
+                            <div class="chart-container">
+                                <canvas id="vaultChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Investment Comparison -->
+            <section class="mb-16 mt-20" data-aos="fade-up">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-gradient mb-8">
+                        <i class="fas fa-balance-scale mr-3"></i>
+                        Investment Comparison
+                    </h2>
+                    
+                    <div class="comparison-container">
+                        <div class="comparison-chart-container">
+                            <canvas id="comparisonChart" style="height: 400px;"></canvas>
+                        </div>
+                        
+                        <div class="comparison-legend">
+                            <div class="legend-item">
+                                <div class="legend-color aibot"></div>
+                                <span>AI Bot Trading</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color gpu"></div>
+                                <span>GPU Mining</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color vault"></div>
+                                <span>Lending Vault</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <div id="footer"></div>
+    </div>
+
+    <!-- Load Components -->
+    <script src="js/components.js"></script>
+    
+    <!-- ROI Calculator JavaScript -->
+    <script src="js/roi-calculator.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>

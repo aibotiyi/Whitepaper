@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokenomics - AIBOT IYI Protocol Documentation</title>
+    <meta name="description" content="Comprehensive tokenomics overview for AIBOT IYI Protocol - Token distribution, utility functions, and economic model.">
+    <meta name="keywords" content="AIB tokenomics, token distribution, token economics, deflationary model, token supply, tokenomics analysis, economic model, token utility, governance token, DeFi tokenomics">
+    <meta name="author" content="AIBOT IYI Protocol">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://docs.aibotiyi.com/tokenomics.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://docs.aibotiyi.com/tokenomics.html">
+    <meta property="og:title" content="Tokenomics - AIBOT IYI Protocol">
+    <meta property="og:description" content="Complete AIB tokenomics model with strategic distribution, deflationary mechanisms, and sustainable economic design for long-term value creation.">
+    <meta property="og:image" content="https://aibotiyi.com/images/tokenomics-preview.jpg">
+    <meta property="og:site_name" content="AIBOT IYI Protocol Documentation">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://docs.aibotiyi.com/tokenomics.html">
+    <meta property="twitter:title" content="Tokenomics - AIBOT IYI Protocol">
+    <meta property="twitter:description" content="Strategic tokenomics design with deflationary mechanics, balanced distribution, and sustainable economic incentives for ecosystem growth.">
+    <meta property="twitter:image" content="https://aibotiyi.com/images/tokenomics-preview.jpg">
+    <meta property="twitter:site" content="@aibotiyi">
+    <meta property="twitter:creator" content="@aibotiyi">
+    
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#FBBF24">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FinancialProduct",
+        "name": "AIB Token Tokenomics",
+        "description": "Comprehensive economic model and token distribution strategy for AIB token",
+        "provider": {
+            "@type": "Organization",
+            "name": "AIBOT IYI Protocol",
+            "url": "https://aibotiyi.com",
+            "sameAs": [
+                "https://twitter.com/aibotiyi",
+                "https://t.me/aibotiyi",
+                "https://youtube.com/@aibotiyi",
+                "https://github.com/aibotiyi"
+            ]
+        },
+        "category": "Token Economics"
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Chart.js for tokenomics charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon180.png">
+</head>
+<body class="bg-black text-white">
+    
+    <!-- Sidebar -->
+    <div id="sidebar"></div>
+    
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <!-- Header for mobile -->
+        <div id="header" class="lg:hidden"></div>
+        
+        <!-- Page Header -->
+        <section class="hero-gradient py-12 px-6">
+            <div class="container mx-auto max-w-4xl">
+                <div data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-coins text-yellow-400 text-3xl mr-4"></i>
+                        <div>
+                            <h1 class="text-4xl md:text-5xl font-bold text-gradient mb-2">
+                                Tokenomics
+                            </h1>
+                            <p class="text-xl text-gray-300">
+                                Economic Model & Token Distribution Strategy
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="container mx-auto max-w-6xl px-6 py-12">
+            
+            <!-- Token Overview -->
+            <section class="mb-16" data-aos="fade-up">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-gradient mb-6">
+                        <i class="fas fa-info-circle mr-3"></i>
+                        AIB Token Overview
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="metric-item">
+                                <span class="metric-label">Token Name</span>
+                                <span class="metric-value text-yellow-400">AIBOTIYI Token</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Token Symbol</span>
+                                <span class="metric-value text-yellow-400">AIB</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Total Supply</span>
+                                <span class="metric-value text-yellow-400">100,000,000 AIB</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Blockchain</span>
+                                <span class="metric-value text-yellow-400">Multi-Chain (BSC, Ethereum, Solana)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div class="metric-item">
+                                <span class="metric-label">Token Standard</span>
+                                <span class="metric-value text-yellow-400">BEP-20 / ERC-20 / SPL</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Initial Price</span>
+                                <span class="metric-value text-yellow-400">$0.1 USD</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Market Cap (Initial)</span>
+                                <span class="metric-value text-yellow-400">$1,000,000 USD</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Deflationary Model</span>
+                                <span class="metric-value text-green-400">✓ Burn Mechanism Active</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contract Addresses & Links -->
+                    <div class="mt-12 space-y-6">
+                        <h3 class="text-2xl font-bold text-gradient mb-6">
+                            <i class="fas fa-link mr-3"></i>
+                            Contract Addresses & Verification
+                        </h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- BSC Contract -->
+                            <div class="bg-gradient-to-br from-yellow-900/20 to-yellow-600/10 p-6 rounded-xl border border-yellow-500/30">
+                                <div class="flex items-center mb-4">
+                                    <img src="images/bnb-bnb-logo.png" alt="BSC" class="w-8 h-8 mr-3">
+                                    <h4 class="text-lg font-bold text-yellow-400">Binance Smart Chain</h4>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="metric-item">
+                                        <span class="metric-label text-sm">Contract Address</span>
+                                        <div class="flex items-center justify-between">
+                                            <span class="metric-value text-yellow-400 text-sm font-mono">0x4fb0...Dc9789</span>
+                                            <button onclick="copyToClipboard('0x4fb0112f59DF1aa06B1e099fD624D479cfDc9789')" class="text-yellow-400 hover:text-yellow-300 ml-2">
+                                                <i class="fas fa-copy"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col space-y-2">
+                                        <a href="https://bscscan.com/token/0x4fb0112f59DF1aa06B1e099fD624D479cfDc9789" 
+                                           target="_blank" 
+                                           class="btn-secondary text-sm w-full text-center">
+                                            <i class="fas fa-external-link-alt mr-2"></i>
+                                            View on BSCScan
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Ethereum Contract -->
+                            <div class="bg-gradient-to-br from-blue-900/20 to-blue-600/10 p-6 rounded-xl border border-blue-500/30">
+                                <div class="flex items-center mb-4">
+                                    <img src="images/ethereum-eth-logo.png" alt="Ethereum" class="w-8 h-8 mr-3">
+                                    <h4 class="text-lg font-bold text-blue-400">Ethereum Network</h4>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="metric-item">
+                                        <span class="metric-label text-sm">Contract Address</span>
+                                        <div class="flex items-center justify-between">
+                                            <span class="metric-value text-blue-400 text-sm font-mono">0x78f...cc9F54</span>
+                                            <button onclick="copyToClipboard('0x78f5823bBEA7bBCe98091E60beeEF8DF31cc9F54')" class="text-blue-400 hover:text-blue-300 ml-2">
+                                                <i class="fas fa-copy"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col space-y-2">
+                                        <a href="https://etherscan.io/token/0x78f5823bBEA7bBCe98091E60beeEF8DF31cc9F54" 
+                                           target="_blank" 
+                                           class="btn-secondary text-sm w-full text-center">
+                                            <i class="fas fa-external-link-alt mr-2"></i>
+                                            View on Etherscan
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Security & Audit Links -->
+                        <div class="bg-gradient-to-br from-green-900/20 to-green-600/10 p-6 rounded-xl border border-green-500/30 mt-6">
+                            <h4 class="text-lg font-bold text-green-400 mb-4">
+                                <i class="fas fa-shield-alt mr-2"></i>
+                                Security & Audit Information
+                            </h4>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <a href="https://github.com/aibotiyi/MainnetContracts/blob/main/ETH_Audit.pdf" 
+                                   target="_blank" 
+                                   class="flex items-center justify-center p-3 bg-green-500/10 rounded-lg border border-green-500/30 hover:border-green-400 transition-colors">
+                                    <i class="fas fa-certificate mr-2 text-green-400"></i>
+                                    <span class="text-green-400 font-medium">Ethereum Audit</span>
+                                </a>
+                                
+                                <a href="https://github.com/aibotiyi/MainnetContracts/blob/main/BSC_Audit.pdf" 
+                                   target="_blank" 
+                                   class="flex items-center justify-center p-3 bg-green-500/10 rounded-lg border border-green-500/30 hover:border-green-400 transition-colors">
+                                    <i class="fas fa-bug mr-2 text-green-400"></i>
+                                    <span class="text-green-400 font-medium">BSC Audit</span>
+                                </a>
+                                
+                                <a href="https://github.com/aibotiyi/MainnetContracts" 
+                                   target="_blank" 
+                                   class="flex items-center justify-center p-3 bg-green-500/10 rounded-lg border border-green-500/30 hover:border-green-400 transition-colors">
+                                    <i class="fab fa-github mr-2 text-green-400"></i>
+                                    <span class="text-green-400 font-medium">Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Market Data & Tracking -->
+                        <div class="bg-gradient-to-br from-purple-900/20 to-purple-600/10 p-6 rounded-xl border border-purple-500/30 mt-6">
+                            <h4 class="text-lg font-bold text-purple-400 mb-4">
+                                <i class="fas fa-chart-bar mr-2"></i>
+                                Market Data & Price Tracking
+                            </h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <!-- CoinMarketCap -->
+                                <a href="#" 
+                                   target="_blank" 
+                                   class="flex items-center p-4 bg-gradient-to-br from-blue-900/20 to-blue-600/10 rounded-lg border border-blue-500/30 hover:border-blue-400 transition-all duration-300 group">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center group-hover:bg-blue-500/30 transition-colors">
+                                            <svg class="w-6 h-6 text-blue-400" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM15.775 16.875H13.475L12.175 14.025L10.875 16.875H8.575L11.175 11.75L8.925 7.125H11.225L12.175 9.5L13.125 7.125H15.425L13.175 11.75L15.775 16.875Z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="font-bold text-blue-400 text-sm">CoinMarketCap (updating ...)</div>
+                                            <div class="text-xs text-gray-400">Live Price & Market Data</div>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <i class="fas fa-external-link-alt text-blue-400 text-sm"></i>
+                                    </div>
+                                </a>
+                                
+                                <!-- CoinGecko -->
+                                <a href="https://www.coingecko.com/en/coins/aibot-iyi" 
+                                   target="_blank" 
+                                   class="flex items-center p-4 bg-gradient-to-br from-yellow-900/20 to-yellow-600/10 rounded-lg border border-yellow-500/30 hover:border-yellow-400 transition-all duration-300 group">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center group-hover:bg-yellow-500/30 transition-colors">
+                                            <svg class="w-6 h-6 text-yellow-400" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.74 16.38c-1.41 1.41-3.31 2.19-5.31 2.19s-3.9-.78-5.31-2.19c-1.41-1.41-2.19-3.31-2.19-5.31s.78-3.9 2.19-5.31c1.41-1.41 3.31-2.19 5.31-2.19s3.9.78 5.31 2.19c1.41 1.41 2.19 3.31 2.19 5.31s-.78 3.9-2.19 5.31z"/>
+                                                <circle cx="12" cy="12" r="3"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <div class="font-bold text-yellow-400 text-sm">CoinGecko</div>
+                                            <div class="text-xs text-gray-400">Analytics & Trading Info</div>
+                                        </div>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <i class="fas fa-external-link-alt text-yellow-400 text-sm"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Token Utility -->
+            <section class="mb-16" data-aos="fade-up">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-gradient mb-6">
+                        <i class="fas fa-cogs mr-3"></i>
+                        Token Utility
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="utility-card">
+                            <div class="utility-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3 class="utility-title">AI Bot Access</h3>
+                            <p class="utility-description">
+                                Stake IYI tokens to access premium AI trading bots and advanced algorithms
+                            </p>
+                        </div>
+                        
+                        <div class="utility-card">
+                            <div class="utility-icon">
+                                <i class="fas fa-vote-yea"></i>
+                            </div>
+                            <h3 class="utility-title">Governance</h3>
+                            <p class="utility-description">
+                                Vote on protocol upgrades, parameter changes, and ecosystem development decisions
+                            </p>
+                        </div>
+                        
+                        <div class="utility-card">
+                            <div class="utility-icon">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <h3 class="utility-title">Fee Reduction</h3>
+                            <p class="utility-description">
+                                Hold IYI tokens to receive reduced transaction fees and premium platform benefits
+                            </p>
+                        </div>
+                        
+                        <div class="utility-card">
+                            <div class="utility-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <h3 class="utility-title">Staking Rewards</h3>
+                            <p class="utility-description">
+                                Earn passive income by staking IYI tokens in various yield farming pools
+                            </p>
+                        </div>
+                        
+                        <div class="utility-card">
+                            <div class="utility-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3 class="utility-title">Mining Pool Access</h3>
+                            <p class="utility-description">
+                                Purchase GPU mining machines and participate in decentralized mining operations
+                            </p>
+                        </div>
+                        
+                        <div class="utility-card">
+                            <div class="utility-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <h3 class="utility-title">Gaming Integration</h3>
+                            <p class="utility-description">
+                                Use IYI tokens in the integrated gaming ecosystem for rewards and achievements
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Deflationary Mechanism -->
+            <section class="mb-16" data-aos="fade-up">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-gradient mb-6">
+                        <i class="fas fa-fire mr-3"></i>
+                        Deflationary Mechanism
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-yellow-400 mb-4">Burn Schedule</h3>
+                            <div class="space-y-6">
+                                <!-- Transaction Burn -->
+                                <div class="bg-gradient-to-br from-red-900/30 to-red-600/10 p-6 rounded-xl border border-red-500/30 hover:border-red-400 transition-all duration-300 group">
+                                    <div class="flex items-center space-x-6">
+                                        <div class="flex-shrink-0">
+                                            <div class="w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center group-hover:bg-red-500/30 transition-colors">
+                                                <div class="text-2xl font-bold text-red-400">2%</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow">
+                                            <div class="flex items-center mb-2">
+                                                <i class="fas fa-exchange-alt text-red-400 mr-2"></i>
+                                                <h4 class="text-lg font-bold text-red-400">Transaction Burn</h4>
+                                            </div>
+                                            <p class="text-gray-300 text-sm leading-relaxed">
+                                                Every transaction burns 2% of AIB tokens, creating constant deflationary pressure
+                                            </p>
+                                            <div class="mt-3 flex items-center text-xs text-red-300">
+                                                <i class="fas fa-fire mr-1"></i>
+                                                <span>Automatic & Continuous</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Monthly Burn -->
+                                <div class="bg-gradient-to-br from-orange-900/30 to-orange-600/10 p-6 rounded-xl border border-orange-500/30 hover:border-orange-400 transition-all duration-300 group">
+                                    <div class="flex items-center space-x-6">
+                                        <div class="flex-shrink-0">
+                                            <div class="w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center group-hover:bg-orange-500/30 transition-colors">
+                                                <div class="text-2xl font-bold text-orange-400">5%</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow">
+                                            <div class="flex items-center mb-2">
+                                                <i class="fas fa-calendar-alt text-orange-400 mr-2"></i>
+                                                <h4 class="text-lg font-bold text-orange-400">Monthly Burn</h4>
+                                            </div>
+                                            <p class="text-gray-300 text-sm leading-relaxed">
+                                                5% of treasury tokens burned monthly to maintain supply scarcity
+                                            </p>
+                                            <div class="mt-3 flex items-center text-xs text-orange-300">
+                                                <i class="fas fa-clock mr-1"></i>
+                                                <span>Scheduled Monthly</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Profit Burn -->
+                                <div class="bg-gradient-to-br from-yellow-900/30 to-yellow-600/10 p-6 rounded-xl border border-yellow-500/30 hover:border-yellow-400 transition-all duration-300 group">
+                                    <div class="flex items-center space-x-6">
+                                        <div class="flex-shrink-0">
+                                            <div class="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center group-hover:bg-yellow-500/30 transition-colors">
+                                                <div class="text-2xl font-bold text-yellow-400">10%</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow">
+                                            <div class="flex items-center mb-2">
+                                                <i class="fas fa-chart-line text-yellow-400 mr-2"></i>
+                                                <h4 class="text-lg font-bold text-yellow-400">Profit Burn</h4>
+                                            </div>
+                                            <p class="text-gray-300 text-sm leading-relaxed">
+                                                10% of AI trading profits used for buyback & burn mechanism
+                                            </p>
+                                            <div class="mt-3 flex items-center text-xs text-yellow-300">
+                                                <i class="fas fa-robot mr-1"></i>
+                                                <span>AI Trading Profits</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-yellow-400 mb-4">Projected Supply Reduction</h3>
+                            <div class="bg-gray-900/50 rounded-xl p-6 border border-yellow-500/20">
+                                <canvas id="burnChart" style="height: 250px;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Vesting Schedule -->
+            <section class="mb-16" data-aos="fade-up">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-gradient mb-6">
+                        <i class="fas fa-calendar-alt mr-3"></i>
+                        Vesting Schedule
+                    </h2>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left">
+                            <thead>
+                                <tr class="border-b border-yellow-500/20">
+                                    <th class="py-4 px-6 text-yellow-400">Category</th>
+                                    <th class="py-4 px-6 text-yellow-400">Allocation</th>
+                                    <th class="py-4 px-6 text-yellow-400">TGE Release</th>
+                                    <th class="py-4 px-6 text-yellow-400">Vesting Period</th>
+                                    <th class="py-4 px-6 text-yellow-400">Cliff Period</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-4 px-6">Community & Ecosystem</td>
+                                    <td class="py-4 px-6">35%</td>
+                                    <td class="py-4 px-6 text-green-400">100%</td>
+                                    <td class="py-4 px-6">No lock</td>
+                                    <td class="py-4 px-6">Immediate</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-4 px-6">Liquidity Provision</td>
+                                    <td class="py-4 px-6">15%</td>
+                                    <td class="py-4 px-6 text-green-400">100%</td>
+                                    <td class="py-4 px-6">Permanent lock</td>
+                                    <td class="py-4 px-6">Emergency only</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-4 px-6">Team & Advisors</td>
+                                    <td class="py-4 px-6">12%</td>
+                                    <td class="py-4 px-6 text-yellow-400">10%</td>
+                                    <td class="py-4 px-6">12 months cliff</td>
+                                    <td class="py-4 px-6">36 months linear</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-4 px-6">Development Fund</td>
+                                    <td class="py-4 px-6">10%</td>
+                                    <td class="py-4 px-6 text-yellow-400">0%</td>
+                                    <td class="py-4 px-6">12 months cliff</td>
+                                    <td class="py-4 px-6">24 months linear</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-4 px-6">Marketing & Partnerships</td>
+                                    <td class="py-4 px-6">8%</td>
+                                    <td class="py-4 px-6 text-yellow-400">5%</td>
+                                    <td class="py-4 px-6">No lock</td>
+                                    <td class="py-4 px-6">18 months linear</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-4 px-6">Private Sale</td>
+                                    <td class="py-4 px-6">6%</td>
+                                    <td class="py-4 px-6 text-yellow-400">10%</td>
+                                    <td class="py-4 px-6">3 months cliff</td>
+                                    <td class="py-4 px-6">9 months linear</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-4 px-6">Public Sale</td>
+                                    <td class="py-4 px-6">5%</td>
+                                    <td class="py-4 px-6 text-yellow-400">100%</td>
+                                    <td class="py-4 px-6">No lock</td>
+                                    <td class="py-4 px-6">Immediate</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-4 px-6">Reserve Fund</td>
+                                    <td class="py-4 px-6">4%</td>
+                                    <td class="py-4 px-6 text-yellow-400">0%</td>
+                                    <td class="py-4 px-6">Permanent lock</td>
+                                    <td class="py-4 px-6">Emergency only</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-4 px-6">Staking Rewards</td>
+                                    <td class="py-4 px-6">3%</td>
+                                    <td class="py-4 px-6 text-yellow-400">100%</td>
+                                    <td class="py-4 px-6">No lock</td>
+                                    <td class="py-4 px-6">24 months linear</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="py-4 px-6">Treasury</td>
+                                    <td class="py-4 px-6">2%</td>
+                                    <td class="py-4 px-6 text-yellow-400">100%</td>
+                                    <td class="py-4 px-6">No lock</td>
+                                    <td class="py-4 px-6">36 months linear</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <div id="footer"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/components.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Copy to clipboard function
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                // Show success message
+                const notification = document.createElement('div');
+                notification.className = 'fixed top-4 right-4 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg z-50';
+                notification.textContent = 'Contract address copied to clipboard!';
+                document.body.appendChild(notification);
+                
+                // Remove notification after 3 seconds
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 3000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+                // Fallback for older browsers
+                const textArea = document.createElement("textarea");
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    const notification = document.createElement('div');
+                    notification.className = 'fixed top-4 right-4 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg z-50';
+                    notification.textContent = 'Contract address copied to clipboard!';
+                    document.body.appendChild(notification);
+                    
+                    setTimeout(() => {
+                        document.body.removeChild(notification);
+                    }, 3000);
+                } catch (err) {
+                    console.error('Fallback: Could not copy', err);
+                }
+                document.body.removeChild(textArea);
+            });
+        }
+
+        // Token Distribution Chart
+        const distributionCtx = document.getElementById('distributionChart').getContext('2d');
+        new Chart(distributionCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Public Sale', 'Mining Rewards', 'Team & Development', 'Ecosystem Fund', 'Strategic Partners'],
+                datasets: [{
+                    data: [35, 25, 20, 10, 10],
+                    backgroundColor: [
+                        '#FCD34D',
+                        '#60A5FA',
+                        '#34D399',
+                        '#A78BFA',
+                        '#F87171'
+                    ],
+                    borderWidth: 2,
+                    borderColor: '#000'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        // Token Burn Projection Chart
+        const burnCtx = document.getElementById('burnChart').getContext('2d');
+        new Chart(burnCtx, {
+            type: 'line',
+            data: {
+                labels: ['Year 1', 'Year 2', 'Year 3', 'Year 4', 'Year 5'],
+                datasets: [{
+                    label: 'Total Supply (Millions)',
+                    data: [1000, 850, 700, 580, 480],
+                    borderColor: '#FCD34D',
+                    backgroundColor: 'rgba(252, 211, 77, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: '#9CA3AF'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: '#9CA3AF'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#9CA3AF'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

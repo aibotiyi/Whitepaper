@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIB Token Platform Utilities - AIBOT IYI Protocol Documentation</title>
+    <meta name="description" content="Deep AIB Token integration across AI Trading, GPU Mining, and DeFi protocols for maximum platform efficiency and sustainable token demand.">
+    <meta name="keywords" content="platform utilities, AIB token integration, AI trading platform, GPU mining platform, DeFi integration, token demand, platform efficiency, cross-platform benefits">
+    <meta name="author" content="AIBOT IYI Protocol">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://docs.aibotiyi.com/platform-aib-utilities.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://docs.aibotiyi.com/platform-aib-utilities.html">
+    <meta property="og:title" content="AIB Token Platform Utilities - AIBOT IYI Protocol">
+    <meta property="og:description" content="Comprehensive AIB token integration across AI Trading, GPU Mining, and DeFi protocols. Maximum utility and sustainable token demand generation.">
+    <meta property="og:image" content="https://aibotiyi.com/images/platform-utilities-preview.jpg">
+    <meta property="og:site_name" content="AIBOT IYI Protocol Documentation">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://docs.aibotiyi.com/platform-aib-utilities.html">
+    <meta property="twitter:title" content="AIB Token Platform Utilities - AIBOT IYI Protocol">
+    <meta property="twitter:description" content="Deep platform integration: AIB token powers AI trading bots, GPU mining operations, and DeFi protocols for comprehensive ecosystem utility.">
+    <meta property="twitter:image" content="https://aibotiyi.com/images/platform-utilities-preview.jpg">
+    <meta property="twitter:site" content="@aibotiyi">
+    <meta property="twitter:creator" content="@aibotiyi">
+    
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#FBBF24">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "AIB Token Platform Integration",
+        "description": "Comprehensive token utility across AI trading, GPU mining, and DeFi platforms",
+        "provider": {
+            "@type": "Organization",
+            "name": "AIBOT IYI Protocol",
+            "url": "https://aibotiyi.com",
+            "sameAs": [
+                "https://twitter.com/aibotiyi",
+                "https://t.me/aibotiyi",
+                "https://youtube.com/@aibotiyi",
+                "https://github.com/aibotiyi"
+            ]
+        },
+        "applicationCategory": "DeFi Platform"
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Chart.js for platform analytics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon180.png">
+</head>
+<body class="bg-black text-white">
+    
+    <!-- Sidebar -->
+    <div id="sidebar"></div>
+    
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <!-- Header for mobile -->
+        <div id="header" class="lg:hidden"></div>
+        
+        <!-- Page Header -->
+        <section class="hero-gradient py-12 px-6">
+            <div class="container mx-auto max-w-6xl">
+                <div data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-microchip text-blue-400 text-3xl mr-4"></i>
+                        <div>
+                            <h1 class="text-4xl md:text-5xl font-bold text-gradient mb-2">
+                                AIB Token Platform Utilities
+                            </h1>
+                            <p class="text-xl text-gray-300">
+                                Deep Integration Across AI Trading, GPU Mining & DeFi Protocols
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="container mx-auto max-w-6xl px-6 py-12">
+            
+            <!-- Platform Integration Overview -->
+            <section class="mb-16" data-aos="fade-up">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-gradient mb-8">
+                        <i class="fas fa-network-wired mr-3"></i>
+                        Platform Integration Overview
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                        <!-- AI Trading Integration -->
+                        <div class="text-center p-6 bg-gradient-to-br from-blue-900/30 to-blue-600/10 rounded-xl border border-blue-500/30">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-blue-500/20 rounded-xl mb-4">
+                                <i class="fas fa-robot text-blue-400 text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-blue-400 mb-2">AI Trading</h3>
+                            <p class="text-gray-300 text-sm mb-4">Advanced algorithm access & premium features</p>
+                            <div class="text-2xl font-bold text-white">94.3%</div>
+                            <div class="text-xs text-gray-400">Success Rate</div>
+                        </div>
+                        
+                        <!-- GPU Mining Integration -->
+                        <div class="text-center p-6 bg-gradient-to-br from-purple-900/30 to-purple-600/10 rounded-xl border border-purple-500/30">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-purple-500/20 rounded-xl mb-4">
+                                <i class="fas fa-server text-purple-400 text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-purple-400 mb-2">GPU Mining</h3>
+                            <p class="text-gray-300 text-sm mb-4">Hardware optimization & priority access</p>
+                            <div class="text-2xl font-bold text-white">25%</div>
+                            <div class="text-xs text-gray-400">Efficiency Boost</div>
+                        </div>
+                        
+                        <!-- DeFi Integration -->
+                        <div class="text-center p-6 bg-gradient-to-br from-yellow-900/30 to-yellow-600/10 rounded-xl border border-yellow-500/30">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-yellow-500/20 rounded-xl mb-4">
+                                <i class="fas fa-coins text-yellow-400 text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-yellow-400 mb-2">DeFi Protocol</h3>
+                            <p class="text-gray-300 text-sm mb-4">Enhanced yields & premium vault access</p>
+                            <div class="text-2xl font-bold text-white">35.5%</div>
+                            <div class="text-xs text-gray-400">Max APY</div>
+                        </div>
+                    </div>
+
+                    <!-- Cross-Platform Benefits -->
+                    <div class="bg-gradient-to-r from-gray-800/50 to-gray-700/30 p-8 rounded-xl">
+                        <h3 class="text-2xl font-bold text-white mb-6 text-center">
+                            <i class="fas fa-sync-alt text-yellow-400 mr-3"></i>
+                            Cross-Platform Synergy Benefits
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="text-center">
+                                <i class="fas fa-layer-group text-blue-400 text-2xl mb-2 block"></i>
+                                <h4 class="font-semibold text-white mb-2">Compound Rewards</h4>
+                                <p class="text-sm text-gray-400">Earn across all 3 platforms simultaneously</p>
+                            </div>
+                            <div class="text-center">
+                                <i class="fas fa-percentage text-green-400 text-2xl mb-2 block"></i>
+                                <h4 class="font-semibold text-white mb-2">Fee Reductions</h4>
+                                <p class="text-sm text-gray-400">Up to 80% off on all platform services</p>
+                            </div>
+                            <div class="text-center">
+                                <i class="fas fa-crown text-yellow-400 text-2xl mb-2 block"></i>
+                                <h4 class="font-semibold text-white mb-2">Priority Access</h4>
+                                <p class="text-sm text-gray-400">First access to new features & hardware</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Trading Platform Utilities -->
+            <section class="mb-16" data-aos="fade-up">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-gradient mb-8">
+                        <i class="fas fa-robot mr-3"></i>
+                        AI Trading Platform Utilities
+                    </h2>
+                    
+                    <div class="grid lg:grid-cols-2 gap-12">
+                        <!-- Trading Utilities -->
+                        <div class="space-y-6">
+                            <div class="bg-gradient-to-br from-blue-900/20 to-blue-600/10 p-6 rounded-xl border border-blue-500/20">
+                                <div class="flex items-center mb-4">
+                                    <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-500/20 rounded-xl mr-4">
+                                        <i class="fas fa-brain text-blue-400 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-blue-400">Premium AI Algorithms</h3>
+                                        <p class="text-gray-400 text-sm">Exclusive access to advanced trading strategies</p>
+                                    </div>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300 text-sm">Access Tier:</span>
+                                        <span class="text-blue-400 font-bold">1K+ AIB Tokens</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300 text-sm">Success Rate:</span>
+                                        <span class="text-green-400 font-bold">94.3%</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300 text-sm">Strategy Types:</span>
+                                        <span class="text-white font-medium">15+ Algorithms</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-gradient-to-br from-purple-900/20 to-purple-600/10 p-6 rounded-xl border border-purple-500/20">
+                                <div class="flex items-center mb-4">
+                                    <div class="inline-flex items-center justify-center w-12 h-12 bg-purple-500/20 rounded-xl mr-4">
+                                        <i class="fas fa-percent text-purple-400 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-purple-400">Trading Fee Reduction</h3>
+                                        <p class="text-gray-400 text-sm">Tiered fee discounts based on AIB holdings</p>
+                                    </div>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300 text-sm">Standard Fee:</span>
+                                        <span class="text-gray-400">0.25%</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300 text-sm">AIB Holder Fee:</span>
+                                        <span class="text-green-400 font-bold">0.05% - 0.125%</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300 text-sm">Max Discount:</span>
+                                        <span class="text-yellow-400 font-bold">80% Off</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-gradient-to-br from-green-900/20 to-green-600/10 p-6 rounded-xl border border-green-500/20">
+                                <div class="flex items-center mb-4">
+                                    <div class="inline-flex items-center justify-center w-12 h-12 bg-green-500/20 rounded-xl mr-4">
+                                        <i class="fas fa-rocket text-green-400 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-green-400">Priority Execution</h3>
+                                        <p class="text-gray-400 text-sm">Faster trade execution and priority queue</p>
+                                    </div>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300 text-sm">Execution Speed:</span>
+                                        <span class="text-green-400 font-bold">2x Faster</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300 text-sm">Queue Priority:</span>
+                                        <span class="text-green-400 font-bold">Front-of-line</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300 text-sm">Slippage Reduction:</span>
+                                        <span class="text-yellow-400 font-bold">Up to 40%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trading Performance Chart -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-6">
+                                <i class="fas fa-chart-line text-blue-400 mr-3"></i>
+                                AI Trading Performance Impact
+                            </h3>
+                            <div class="bg-gradient-to-br from-blue-900/30 to-purple-900/30 p-6 rounded-xl border border-blue-500/20">
+                                <div style="height: 300px;">
+                                    <canvas id="tradingPerformanceChart"></canvas>
+                                </div>
+                                
+                                <div class="grid grid-cols-2 gap-4 mt-6">
+                                    <div class="text-center p-3 bg-gray-800/50 rounded-lg">
+                                        <div class="text-lg font-bold text-blue-400">Standard</div>
+                                        <div class="text-sm text-gray-400">12.7% Monthly ROI</div>
+                                    </div>
+                                    <div class="text-center p-3 bg-gray-800/50 rounded-lg">
+                                        <div class="text-lg font-bold text-green-400">AIB Enhanced</div>
+                                        <div class="text-sm text-gray-400">23.6% Monthly ROI</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GPU Mining Platform Utilities -->
+            <section class="mb-16" data-aos="fade-up">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-gradient mb-8">
+                        <i class="fas fa-server mr-3"></i>
+                        GPU Mining Platform Utilities
+                    </h2>
+                    
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                        <!-- Priority Hardware Access -->
+                        <div class="text-center p-6 bg-gradient-to-br from-purple-900/20 to-purple-600/10 rounded-xl border border-purple-500/20">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-purple-500/20 rounded-xl mb-4">
+                                <i class="fas fa-microchip text-purple-400 text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-purple-400 mb-3">Priority Hardware Access</h3>
+                            <p class="text-gray-300 text-sm mb-4">
+                                Get first access to new GPU mining equipment and priority allocation during high-demand periods.
+                            </p>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-purple-400">24h</div>
+                                    <div class="text-xs text-gray-400">Early Access</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-purple-400">5K+</div>
+                                    <div class="text-xs text-gray-400">AIB Required</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mining Pool Benefits -->
+                        <div class="text-center p-6 bg-gradient-to-br from-blue-900/20 to-blue-600/10 rounded-xl border border-blue-500/20">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-blue-500/20 rounded-xl mb-4">
+                                <i class="fas fa-tachometer-alt text-blue-400 text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-blue-400 mb-3">Mining Pool Benefits</h3>
+                            <p class="text-gray-300 text-sm mb-4">
+                                Reduced pool fees, priority payouts, and access to premium mining pools with higher efficiency.
+                            </p>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-blue-400">50%</div>
+                                    <div class="text-xs text-gray-400">Fee Reduction</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-blue-400">98.7%</div>
+                                    <div class="text-xs text-gray-400">Pool Uptime</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Energy Optimization -->
+                        <div class="text-center p-6 bg-gradient-to-br from-green-900/20 to-green-600/10 rounded-xl border border-green-500/20">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-green-500/20 rounded-xl mb-4">
+                                <i class="fas fa-bolt text-green-400 text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-green-400 mb-3">AI Energy Optimization</h3>
+                            <p class="text-gray-300 text-sm mb-4">
+                                AI-powered energy optimization algorithms exclusively available to AIB token holders.
+                            </p>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-green-400">25%</div>
+                                    <div class="text-xs text-gray-400">Power Savings</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-green-400">AI</div>
+                                    <div class="text-xs text-gray-400">Optimization</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mining ROI Comparison -->
+                    <div class="bg-gradient-to-br from-purple-900/30 to-blue-900/30 p-8 rounded-2xl border border-purple-500/20">
+                        <h3 class="text-2xl font-bold text-center mb-8 text-purple-400">
+                            <i class="fas fa-chart-bar mr-3"></i>
+                            Mining ROI: Standard vs AIB Holders
+                        </h3>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="bg-gray-800/50 p-6 rounded-xl">
+                                <h4 class="text-lg font-bold text-gray-400 mb-4 text-center">Standard Mining</h4>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">Pool Fee:</span>
+                                        <span class="text-red-400">2.0%</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">Power Efficiency:</span>
+                                        <span class="text-gray-400">Standard</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">Priority Access:</span>
+                                        <span class="text-red-400">No</span>
+                                    </div>
+                                    <div class="flex items-center justify-between border-t border-gray-600 pt-3">
+                                        <span class="text-white font-semibold">Monthly ROI:</span>
+                                        <span class="text-white font-bold">12.3%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-gradient-to-br from-yellow-900/30 to-yellow-600/20 p-6 rounded-xl border border-yellow-500/30">
+                                <h4 class="text-lg font-bold text-yellow-400 mb-4 text-center">AIB Holder Mining</h4>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">Pool Fee:</span>
+                                        <span class="text-green-400">1.0%</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">Power Efficiency:</span>
+                                        <span class="text-green-400">+25% Optimized</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">Priority Access:</span>
+                                        <span class="text-green-400">Yes</span>
+                                    </div>
+                                    <div class="flex items-center justify-between border-t border-yellow-500 pt-3">
+                                        <span class="text-white font-semibold">Monthly ROI:</span>
+                                        <span class="text-yellow-400 font-bold">15.8%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DeFi Protocol Utilities -->
+            <section class="mb-16" data-aos="fade-up">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-gradient mb-8">
+                        <i class="fas fa-coins mr-3"></i>
+                        DeFi Protocol Utilities
+                    </h2>
+                    
+                    <div class="grid lg:grid-cols-2 gap-12">
+                        <!-- DeFi Features -->
+                        <div class="space-y-6">
+                            <div class="bg-gradient-to-br from-yellow-900/20 to-yellow-600/10 p-6 rounded-xl border border-yellow-500/20">
+                                <div class="flex items-center mb-4">
+                                    <div class="inline-flex items-center justify-center w-12 h-12 bg-yellow-500/20 rounded-xl mr-4">
+                                        <i class="fas fa-vault text-yellow-400 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-yellow-400">Enhanced Lending Vaults</h3>
+                                        <p class="text-gray-400 text-sm">Access to premium yield farming opportunities</p>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="text-center p-3 bg-gray-800/50 rounded-lg">
+                                        <div class="text-sm text-gray-400">Conservative+</div>
+                                        <div class="text-lg font-bold text-green-400">15.2%</div>
+                                    </div>
+                                    <div class="text-center p-3 bg-gray-800/50 rounded-lg">
+                                        <div class="text-sm text-gray-400">Moderate+</div>
+                                        <div class="text-lg font-bold text-green-400">21.7%</div>
+                                    </div>
+                                    <div class="text-center p-3 bg-gray-800/50 rounded-lg">
+                                        <div class="text-sm text-gray-400">Aggressive+</div>
+                                        <div class="text-lg font-bold text-green-400">28.1%</div>
+                                    </div>
+                                    <div class="text-center p-3 bg-gray-800/50 rounded-lg">
+                                        <div class="text-sm text-gray-400">Premium+</div>
+                                        <div class="text-lg font-bold text-yellow-400">35.5%</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-gradient-to-br from-blue-900/20 to-blue-600/10 p-6 rounded-xl border border-blue-500/20">
+                                <div class="flex items-center mb-4">
+                                    <div class="inline-flex items-center justify-center w-12 h-12 bg-blue-500/20 rounded-xl mr-4">
+                                        <i class="fas fa-exchange-alt text-blue-400 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xl font-bold text-blue-400">Liquidity Mining Rewards</h3>
+                                        <p class="text-gray-400 text-sm">Additional rewards for providing AIB liquidity</p>
+                                    </div>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300 text-sm">Base LP Rewards:</span>
+                                        <span class="text-green-400 font-bold">8.5% APY</span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300 text-sm">AIB Bonus Rewards:</span>
+                                        <span class="text-yellow-400 font-bold">+12.3% APY</span>
+                                    </div>
+                                    <div class="flex items-center justify-between border-t border-blue-500/30 pt-3">
+                                        <span class="text-white font-semibold">Total Effective APY:</span>
+                                        <span class="text-yellow-400 font-bold">20.8%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DeFi Stats Chart -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-6">
+                                <i class="fas fa-chart-pie text-yellow-400 mr-3"></i>
+                                DeFi Yield Comparison
+                            </h3>
+                            <div class="bg-gradient-to-br from-yellow-900/30 to-green-900/30 p-6 rounded-xl border border-yellow-500/20">
+                                <div style="height: 300px;">
+                                    <canvas id="defiYieldChart"></canvas>
+                                </div>
+                                
+                                <div class="grid grid-cols-2 gap-4 mt-6">
+                                    <div class="text-center p-3 bg-gray-800/50 rounded-lg">
+                                        <div class="text-lg font-bold text-yellow-400">$12.5M</div>
+                                        <div class="text-sm text-gray-400">Total Value Locked</div>
+                                    </div>
+                                    <div class="text-center p-3 bg-gray-800/50 rounded-lg">
+                                        <div class="text-lg font-bold text-green-400">98.7%</div>
+                                        <div class="text-sm text-gray-400">Success Rate</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Integration Benefits Summary -->
+            <section class="mb-16" data-aos="fade-up">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-gradient mb-8">
+                        <i class="fas fa-layer-group mr-3"></i>
+                        Integrated Platform Benefits
+                    </h2>
+                    
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center p-6 bg-gradient-to-br from-blue-900/20 to-blue-600/10 rounded-xl border border-blue-500/20">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-blue-500/20 rounded-xl mb-4">
+                                <i class="fas fa-sync-alt text-blue-400 text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-blue-400 mb-3">Cross-Platform Rewards</h3>
+                            <p class="text-gray-300 text-sm mb-4">
+                                Earn rewards across all three platforms simultaneously. Mining profits can auto-compound in DeFi vaults while AI trading generates additional yield.
+                            </p>
+                            <div class="text-2xl font-bold text-green-400">3x</div>
+                            <div class="text-sm text-gray-400">Revenue Streams</div>
+                        </div>
+
+                        <div class="text-center p-6 bg-gradient-to-br from-purple-900/20 to-purple-600/10 rounded-xl border border-purple-500/20">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-purple-500/20 rounded-xl mb-4">
+                                <i class="fas fa-layer-group text-purple-400 text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-purple-400 mb-3">Compound Efficiency</h3>
+                            <p class="text-gray-300 text-sm mb-4">
+                                AIB tokens unlock efficiency boosts across all platforms. Lower fees, higher yields, and priority access create compounding benefits.
+                            </p>
+                            <div class="text-2xl font-bold text-yellow-400">+47%</div>
+                            <div class="text-sm text-gray-400">Efficiency Gain</div>
+                        </div>
+
+                        <div class="text-center p-6 bg-gradient-to-br from-green-900/20 to-green-600/10 rounded-xl border border-green-500/20">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-green-500/20 rounded-xl mb-4">
+                                <i class="fas fa-chart-line text-green-400 text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-green-400 mb-3">Scalable Returns</h3>
+                            <p class="text-gray-300 text-sm mb-4">
+                                As your AIB token holdings grow, benefits scale across all platforms. Higher tiers unlock exponentially better terms and opportunities.
+                            </p>
+                            <div class="text-2xl font-bold text-green-400">∞</div>
+                            <div class="text-sm text-gray-400">Scaling Potential</div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="mt-12 text-center">
+                        <div class="bg-gradient-to-r from-blue-400/10 to-purple-600/10 p-8 rounded-2xl border border-blue-500/20">
+                            <h3 class="text-2xl font-bold text-blue-400 mb-4">
+                                Experience Platform Integration
+                            </h3>
+                            <p class="text-gray-300 mb-6 max-w-3xl mx-auto">
+                                Join the AIBOT IYI Protocol ecosystem and unlock the full potential of integrated platform utilities designed for maximum efficiency and returns.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a href="platform.html" class="btn-primary">
+                                    <i class="fas fa-rocket mr-2"></i>
+                                    Explore Platform
+                                </a>
+                                <a href="aib-token.html" class="btn-secondary">
+                                    <i class="fas fa-coins mr-2"></i>
+                                    Get AIB Tokens
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <div id="footer"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/components.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Trading Performance Chart
+        const tradingCtx = document.getElementById('tradingPerformanceChart').getContext('2d');
+        new Chart(tradingCtx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                datasets: [
+                    {
+                        label: 'Standard Trading',
+                        data: [12.3, 13.1, 11.8, 12.9, 13.5, 12.7],
+                        borderColor: '#6B7280',
+                        backgroundColor: 'rgba(107, 114, 128, 0.1)',
+                        borderWidth: 2,
+                        tension: 0.4
+                    },
+                    {
+                        label: 'AIB Enhanced Trading',
+                        data: [18.7, 21.2, 19.8, 22.4, 24.1, 23.6],
+                        borderColor: '#60A5FA',
+                        backgroundColor: 'rgba(96, 165, 250, 0.1)',
+                        borderWidth: 2,
+                        tension: 0.4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: { color: '#E5E7EB' }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                        ticks: { 
+                            color: '#E5E7EB',
+                            callback: function(value) { return value + '%'; }
+                        }
+                    },
+                    x: {
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                        ticks: { color: '#E5E7EB' }
+                    }
+                }
+            }
+        });
+
+        // DeFi Yield Chart
+        const defiCtx = document.getElementById('defiYieldChart').getContext('2d');
+        new Chart(defiCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Conservative+', 'Moderate+', 'Aggressive+', 'Premium+'],
+                datasets: [{
+                    data: [15.2, 21.7, 28.1, 35.5],
+                    backgroundColor: [
+                        '#10B981',
+                        '#3B82F6',
+                        '#8B5CF6',
+                        '#F59E0B'
+                    ],
+                    borderWidth: 2,
+                    borderColor: '#1F2937'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { 
+                            color: '#E5E7EB',
+                            padding: 15,
+                            usePointStyle: true
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
